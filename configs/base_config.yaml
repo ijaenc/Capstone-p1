@@ -1,0 +1,9 @@
+paths:
+  pedidos: data/raw/detalle_pedidos_santiago_202612.xlsx
+  catalogo: data/raw/catalogo_productos.xlsx
+  matriz: data/raw/matriz_distancias_direcciones_unicas.xlsx
+
+run:
+  seed_base: 42
+  n_runs: 10
+  time_limit_sec: 500
