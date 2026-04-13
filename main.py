@@ -1,32 +1,36 @@
-from pathlib import Path
 import pandas as pd
 
-from src.config import load_config
-from src.load_data import load_matriz
-from src.build_nodes import extract_nodes_from_matrix, merge_nodes_with_geo
+from src.build_osrm_matrix import (
+    build_nodes_for_matrix,
+    build_osrm_matrix_in_blocks,
+    save_matrices,
+)
 
 
 def main():
-    config = load_config()
+    nodes_master = pd.read_csv("data/processed/nodos_master.csv")
+    clientes_modelo = pd.read_csv("data/processed/clientes_modelo.csv")
 
-    matriz = load_matriz(config["paths"]["matriz"])
-    geo = pd.read_csv("data/raw/direcciones_geoapify_unido.csv")
+    nodes = build_nodes_for_matrix(nodes_master, clientes_modelo)
 
-    nodes = extract_nodes_from_matrix(matriz)
-    nodes_geo = merge_nodes_with_geo(nodes, geo)
+    print("Nodos para matriz:", len(nodes))
+    print(nodes.head())
 
-    print("Nodos extraídos desde matriz:", len(nodes))
-    print("Nodos con coordenadas:", nodes_geo["lat"].notna().sum() if "lat" in nodes_geo.columns else "revisar nombre columna lat")
-    print("Nodos sin coordenadas:", nodes_geo["lat"].isna().sum() if "lat" in nodes_geo.columns else "revisar nombre columna lat")
+    # prueba inicial pequeña
+    sample = nodes.head(20).copy()
 
-    print("\nColumnas del archivo final:")
-    print(nodes_geo.columns.tolist())
+    dur, dist = build_osrm_matrix_in_blocks(sample, block_size=10)
 
-    print("\nPrimeras filas:")
-    print(nodes_geo.head())
+    print("\nDuración matriz shape:", dur.shape)
+    print("Distancia matriz shape:", dist.shape)
 
-    Path("data/processed").mkdir(parents=True, exist_ok=True)
-    nodes_geo.to_csv("data/processed/nodos_master.csv", index=False, encoding="utf-8-sig")
+    save_matrices(
+        dur,
+        dist,
+        out_dir="data/processed/test_osrm"
+    )
+
+    print("\nArchivos exportados en data/processed/test_osrm")
 
 
 if __name__ == "__main__":
