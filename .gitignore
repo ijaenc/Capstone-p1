@@ -2,5 +2,4 @@ __pycache__/
 *.pyc
 .venv/
 outputs/
-data/processed/
 .ipynb_checkpoints/
