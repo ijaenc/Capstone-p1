@@ -135,7 +135,7 @@ def main():
     )
 
     aplicar_2opt = True
-    time_limit_2opt_seg = 1.0
+    time_limit_2opt_seg = 3.0
 
     # =========================
     # SALIDAS
@@ -147,6 +147,7 @@ def main():
     resumen_global = []
     detalle_visitas_global = []
     resumen_rutas_global = []
+    auditoria_nodos_faltantes_global = []
 
     # =========================
     # ITERAR TODOS LOS GRUPOS
@@ -184,11 +185,42 @@ def main():
         print("Km:", resultado["km_totales"])
         print("Tiempo solver (seg):", round(t1 - t0, 3))
 
+        # =========================
+        # AUDITORÍA POR GRUPO
+        # =========================
+        deposito_id = int(df_cluster["node_id_deposito"].iloc[0])
+        nodos_esperados = set(clientes_dia["node_id"].astype(int).tolist())
+
+        nodos_servidos_cluster = set()
+        for r in resultado["resumen_rutas"]:
+            for nid in r["ruta"]:
+                nid = int(nid)
+                if nid != deposito_id:
+                    nodos_servidos_cluster.add(nid)
+
+        nodos_faltantes_cluster = sorted(list(nodos_esperados - nodos_servidos_cluster))
+
+        if nodos_faltantes_cluster:
+            print(
+                f"WARNING: FECHA {fecha} | VENTANA {ventana} | CLUSTER {cluster_id} "
+                f"tiene {len(nodos_faltantes_cluster)} nodos no servidos."
+            )
+
+            for nid in nodos_faltantes_cluster:
+                auditoria_nodos_faltantes_global.append({
+                    "fecha": fecha,
+                    "ventana": ventana,
+                    "cluster_id_dia": cluster_id,
+                    "node_id": nid,
+                })
+
         resumen_global.append({
             "fecha": fecha,
             "ventana": ventana,
             "cluster_id_dia": cluster_id,
             "n_nodos": len(clientes_dia),
+            "n_nodos_servidos": len(nodos_servidos_cluster),
+            "n_nodos_no_servidos": len(nodos_faltantes_cluster),
             "volumen_total_cluster_m3": volumen_cluster,
             "peso_total_cluster_kg": peso_cluster,
             "num_rutas": resultado["num_rutas"],
@@ -254,11 +286,74 @@ def main():
     df_resumen_clusters = pd.DataFrame(resumen_global)
     df_resumen_rutas = pd.DataFrame(resumen_rutas_global)
     df_detalle_visitas = pd.DataFrame(detalle_visitas_global)
+    df_auditoria_nodos_faltantes = pd.DataFrame(auditoria_nodos_faltantes_global)
+
+    # =========================
+    # AUDITORÍA DE COBERTURA GLOBAL
+    # =========================
+    if not df_detalle_visitas.empty:
+        df_visitas_clientes = df_detalle_visitas[df_detalle_visitas["es_deposito"] == 0].copy()
+    else:
+        df_visitas_clientes = pd.DataFrame(columns=[
+            "fecha", "ventana", "cluster_id_dia", "node_id"
+        ])
+
+    cols_match_input = ["Fecha de despacho Solicitada", "ventana", "cluster_id_dia", "node_id"]
+    cols_match_visitas = ["fecha", "ventana", "cluster_id_dia", "node_id"]
+
+    df_input_audit = df.copy()
+    df_input_audit["cluster_id_dia"] = df_input_audit["cluster_id_dia"].astype(str)
+    df_input_audit["ventana"] = df_input_audit["ventana"].astype(str).str.upper().str.strip()
+    df_input_audit["node_id"] = df_input_audit["node_id"].astype(int)
+
+    if not df_visitas_clientes.empty:
+        df_nodos_servidos = (
+            df_visitas_clientes[cols_match_visitas]
+            .rename(columns={"fecha": "Fecha de despacho Solicitada"})
+            .drop_duplicates()
+            .copy()
+        )
+        df_nodos_servidos["cluster_id_dia"] = df_nodos_servidos["cluster_id_dia"].astype(str)
+        df_nodos_servidos["ventana"] = df_nodos_servidos["ventana"].astype(str).str.upper().str.strip()
+        df_nodos_servidos["node_id"] = df_nodos_servidos["node_id"].astype(int)
+        df_nodos_servidos["servido"] = 1
+    else:
+        df_nodos_servidos = pd.DataFrame(columns=cols_match_input + ["servido"])
+
+    df_input_con_cobertura = df_input_audit.merge(
+        df_nodos_servidos,
+        on=cols_match_input,
+        how="left"
+    )
+
+    df_input_con_cobertura["servido"] = df_input_con_cobertura["servido"].fillna(0).astype(int)
+
+    df_pedidos_no_servidos = df_input_con_cobertura[df_input_con_cobertura["servido"] == 0].copy()
+
+    total_pedidos_input = len(df_input_con_cobertura)
+    total_pedidos_servidos = int(df_input_con_cobertura["servido"].sum())
+    total_pedidos_no_servidos = len(df_pedidos_no_servidos)
+
+    total_nodos_input = df_input_con_cobertura[cols_match_input].drop_duplicates().shape[0]
+    total_nodos_servidos = df_nodos_servidos[cols_match_input].drop_duplicates().shape[0]
+    total_nodos_no_servidos = total_nodos_input - total_nodos_servidos
+
+    resumen_cobertura = pd.DataFrame([{
+        "pedidos_input": total_pedidos_input,
+        "pedidos_servidos": total_pedidos_servidos,
+        "pedidos_no_servidos": total_pedidos_no_servidos,
+        "pct_pedidos_servidos": round(100 * total_pedidos_servidos / total_pedidos_input, 3) if total_pedidos_input > 0 else 0.0,
+        "nodos_input": total_nodos_input,
+        "nodos_servidos": total_nodos_servidos,
+        "nodos_no_servidos": total_nodos_no_servidos,
+        "pct_nodos_servidos": round(100 * total_nodos_servidos / total_nodos_input, 3) if total_nodos_input > 0 else 0.0,
+    }])
 
     resumen_total = pd.DataFrame([{
         "grupos_corridos": len(df_resumen_clusters),
         "rutas_totales": int(df_resumen_rutas.shape[0]) if not df_resumen_rutas.empty else 0,
         "nodos_totales": int(df_resumen_clusters["n_nodos"].sum()) if not df_resumen_clusters.empty else 0,
+        "nodos_no_servidos_total": int(df_resumen_clusters["n_nodos_no_servidos"].sum()) if not df_resumen_clusters.empty else 0,
         "km_totales_global": round(df_resumen_clusters["km_totales"].sum(), 3) if not df_resumen_clusters.empty else 0.0,
         "volumen_total_global_m3": round(df_resumen_clusters["volumen_total_cluster_m3"].sum(), 3) if not df_resumen_clusters.empty else 0.0,
         "peso_total_global_kg": round(df_resumen_clusters["peso_total_cluster_kg"].sum(), 3) if not df_resumen_clusters.empty else 0.0,
@@ -277,17 +372,26 @@ def main():
     ruta_resumen_clusters = os.path.join(carpeta_salida, f"clusters_resumen_{version}.csv")
     ruta_resumen_rutas = os.path.join(carpeta_salida, f"clusters_rutas_resumen_{version}.csv")
     ruta_detalle_visitas = os.path.join(carpeta_salida, f"clusters_visitas_detalle_{version}.csv")
+    ruta_resumen_cobertura = os.path.join(carpeta_salida, f"cobertura_resumen_{version}.csv")
+    ruta_pedidos_no_servidos = os.path.join(carpeta_salida, f"pedidos_no_servidos_{version}.csv")
+    ruta_nodos_no_servidos = os.path.join(carpeta_salida, f"nodos_no_servidos_{version}.csv")
 
     resumen_total.to_csv(ruta_resumen_total, index=False, encoding="utf-8-sig")
     df_resumen_clusters.to_csv(ruta_resumen_clusters, index=False, encoding="utf-8-sig")
     df_resumen_rutas.to_csv(ruta_resumen_rutas, index=False, encoding="utf-8-sig")
     df_detalle_visitas.to_csv(ruta_detalle_visitas, index=False, encoding="utf-8-sig")
+    resumen_cobertura.to_csv(ruta_resumen_cobertura, index=False, encoding="utf-8-sig")
+    df_pedidos_no_servidos.to_csv(ruta_pedidos_no_servidos, index=False, encoding="utf-8-sig")
+    df_auditoria_nodos_faltantes.to_csv(ruta_nodos_no_servidos, index=False, encoding="utf-8-sig")
 
     # =========================
     # RESUMEN FINAL
     # =========================
     print("\n=== RESUMEN GLOBAL TOTAL ===")
     print(resumen_total.to_string(index=False))
+
+    print("\n=== COBERTURA ===")
+    print(resumen_cobertura.to_string(index=False))
 
     print("\n=== RESULTADO GLOBAL ===")
     print("Grupos corridos:", len(df_resumen_clusters))
@@ -296,6 +400,9 @@ def main():
     print("Archivo resumen grupos:", ruta_resumen_clusters)
     print("Archivo resumen rutas:", ruta_resumen_rutas)
     print("Archivo detalle visitas:", ruta_detalle_visitas)
+    print("Archivo cobertura:", ruta_resumen_cobertura)
+    print("Archivo pedidos no servidos:", ruta_pedidos_no_servidos)
+    print("Archivo nodos no servidos:", ruta_nodos_no_servidos)
 
 
 if __name__ == "__main__":
