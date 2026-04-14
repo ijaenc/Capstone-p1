@@ -1,0 +1,2 @@
+﻿grupos_corridos,rutas_totales,nodos_totales,nodos_no_servidos_total,km_totales_global,volumen_total_global_m3,peso_total_global_kg,km_promedio_por_ruta,clientes_promedio_por_ruta,utilizacion_vol_promedio_pct,utilizacion_peso_promedio_pct,tiempo_total_promedio_h,tiempo_solver_total_seg
+315,614,4087,0,14042.403,4516.704,660355.169,22.87,6.656,81.735,35.85,2.047,19.659
