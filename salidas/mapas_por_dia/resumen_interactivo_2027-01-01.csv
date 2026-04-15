@@ -1,0 +1,16 @@
+﻿fecha,ventana,cluster_id_dia,ruta_id,distancia_osrm_km,duracion_osrm_h,nombre_capa
+2027-01-01,AM,1,1,0.0,0.0,AM | Cluster 1 | Ruta 1
+2027-01-01,AM,1,2,0.0,0.0,AM | Cluster 1 | Ruta 2
+2027-01-01,AM,2,1,0.0,0.0,AM | Cluster 2 | Ruta 1
+2027-01-01,AM,2,2,0.0,0.0,AM | Cluster 2 | Ruta 2
+2027-01-01,AM,4,1,0.0,0.0,AM | Cluster 4 | Ruta 1
+2027-01-01,AM,4,2,0.0,0.0,AM | Cluster 4 | Ruta 2
+2027-01-01,AM,7,1,0.0,0.0,AM | Cluster 7 | Ruta 1
+2027-01-01,AM,7,2,0.0,0.0,AM | Cluster 7 | Ruta 2
+2027-01-01,PM,3,1,0.0,0.0,PM | Cluster 3 | Ruta 1
+2027-01-01,PM,3,2,0.0,0.0,PM | Cluster 3 | Ruta 2
+2027-01-01,PM,5,1,0.0,0.0,PM | Cluster 5 | Ruta 1
+2027-01-01,PM,5,2,0.0,0.0,PM | Cluster 5 | Ruta 2
+2027-01-01,PM,6,1,0.0,0.0,PM | Cluster 6 | Ruta 1
+2027-01-01,PM,6,2,0.0,0.0,PM | Cluster 6 | Ruta 2
+2027-01-01,PM,8,1,0.0,0.0,PM | Cluster 8 | Ruta 1

@@ -10,8 +10,8 @@ import time
 
 @dataclass
 class ConfiguracionSolver:
-    capacidad_volumen_m3: float = 45.0
-    capacidad_peso_kg: float = 7500.0
+    capacidad_volumen_m3: float = 9.0
+    capacidad_peso_kg: float = 3000.0
 
     # Jornada diaria
     jornada_max_horas: float = 8.0

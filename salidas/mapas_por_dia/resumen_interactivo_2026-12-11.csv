@@ -1,0 +1,19 @@
+﻿fecha,ventana,cluster_id_dia,ruta_id,distancia_osrm_km,duracion_osrm_h,nombre_capa
+2026-12-11,AM,2,1,85.226,1.736,AM | Cluster 2 | Ruta 1
+2026-12-11,AM,2,2,33.617,0.702,AM | Cluster 2 | Ruta 2
+2026-12-11,AM,4,1,48.425,1.045,AM | Cluster 4 | Ruta 1
+2026-12-11,AM,4,2,41.919,0.805,AM | Cluster 4 | Ruta 2
+2026-12-11,AM,5,1,13.299,0.408,AM | Cluster 5 | Ruta 1
+2026-12-11,AM,5,2,55.397,1.105,AM | Cluster 5 | Ruta 2
+2026-12-11,AM,8,1,23.52,0.632,AM | Cluster 8 | Ruta 1
+2026-12-11,AM,8,2,26.703,0.644,AM | Cluster 8 | Ruta 2
+2026-12-11,AM,9,1,51.65,1.309,AM | Cluster 9 | Ruta 1
+2026-12-11,AM,9,2,51.453,1.004,AM | Cluster 9 | Ruta 2
+2026-12-11,PM,1,1,39.612,0.976,PM | Cluster 1 | Ruta 1
+2026-12-11,PM,1,2,29.457,0.614,PM | Cluster 1 | Ruta 2
+2026-12-11,PM,3,1,19.299,0.516,PM | Cluster 3 | Ruta 1
+2026-12-11,PM,3,2,22.737,0.526,PM | Cluster 3 | Ruta 2
+2026-12-11,PM,6,1,12.889,0.399,PM | Cluster 6 | Ruta 1
+2026-12-11,PM,6,2,13.158,0.342,PM | Cluster 6 | Ruta 2
+2026-12-11,PM,7,1,19.943,0.519,PM | Cluster 7 | Ruta 1
+2026-12-11,PM,7,2,19.09,0.484,PM | Cluster 7 | Ruta 2

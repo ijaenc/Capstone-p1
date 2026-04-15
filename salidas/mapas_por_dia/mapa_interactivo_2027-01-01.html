@@ -1,0 +1,3833 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_852eaf77fa707fa0a07963db4e60205c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_852eaf77fa707fa0a07963db4e60205c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_852eaf77fa707fa0a07963db4e60205c = L.map(
+                "map_852eaf77fa707fa0a07963db4e60205c",
+                {
+                    center: [-33.44440115062323, -70.64570390918074],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ad7e20a9b66d27cbd8fba2ad8e05942 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0ad7e20a9b66d27cbd8fba2ad8e05942.addTo(map_852eaf77fa707fa0a07963db4e60205c);
+        
+    
+            var feature_group_1f446a78360fc678c34bff5cc3a87a60 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_851109de5d48e48eed9c593109f9c7a9 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.41625625370045, -70.66756956491413], [-33.41625625370045, -70.66756956491413], [-33.4194855, -70.64406], [-33.4180246, -70.6053313], [-33.4174043, -70.6050653], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+            poly_line_851109de5d48e48eed9c593109f9c7a9.bindTooltip(
+                `<div>
+                     AM | Cluster 1 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4405e6e31b702fbbc415f61f04ffcdc1 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_b54f25e07abb35fd3c9107f8432df560 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3bb2a27282e121ab7918530e62881ee = $(`<div id="html_a3bb2a27282e121ab7918530e62881ee" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_b54f25e07abb35fd3c9107f8432df560.setContent(html_a3bb2a27282e121ab7918530e62881ee);
+            
+        
+
+        circle_marker_4405e6e31b702fbbc415f61f04ffcdc1.bindPopup(popup_b54f25e07abb35fd3c9107f8432df560)
+        ;
+
+        
+    
+    
+            circle_marker_4405e6e31b702fbbc415f61f04ffcdc1.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ec6d11ba7cc3aae14883d718dee265a = L.circleMarker(
+                [-33.41625625370045, -70.66756956491413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_faa764a51ed80f8eb8a7a92f0a204a0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d6ef0f4d4366dbcb8d969dbffac039c = $(`<div id="html_7d6ef0f4d4366dbcb8d969dbffac039c" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 1<br>Node ID: 1448<br>Dirección: CALLE AMUNÁTEGUI 6557</div>`)[0];
+                popup_faa764a51ed80f8eb8a7a92f0a204a0e.setContent(html_7d6ef0f4d4366dbcb8d969dbffac039c);
+            
+        
+
+        circle_marker_0ec6d11ba7cc3aae14883d718dee265a.bindPopup(popup_faa764a51ed80f8eb8a7a92f0a204a0e)
+        ;
+
+        
+    
+    
+            var circle_marker_1ee62c092f04b53a1ec94b1579f20334 = L.circleMarker(
+                [-33.41625625370045, -70.66756956491413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_2ce8031fa7549ccd1e7bb981eceef28a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f739d10cdc34ee09d0f60a6347a6f955 = $(`<div id="html_f739d10cdc34ee09d0f60a6347a6f955" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 2<br>Node ID: 1472<br>Dirección: CALLE AMUNÁTEGUI 9147</div>`)[0];
+                popup_2ce8031fa7549ccd1e7bb981eceef28a.setContent(html_f739d10cdc34ee09d0f60a6347a6f955);
+            
+        
+
+        circle_marker_1ee62c092f04b53a1ec94b1579f20334.bindPopup(popup_2ce8031fa7549ccd1e7bb981eceef28a)
+        ;
+
+        
+    
+    
+            var circle_marker_1256751033c59047fed70560f3888c07 = L.circleMarker(
+                [-33.4194855, -70.64406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_f04b179920b677f3f3ebe93f031530c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cad9c1885ec996276f10b37d76db880 = $(`<div id="html_3cad9c1885ec996276f10b37d76db880" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 3<br>Node ID: 913<br>Dirección: AV. RECOLETA 1088</div>`)[0];
+                popup_f04b179920b677f3f3ebe93f031530c6.setContent(html_3cad9c1885ec996276f10b37d76db880);
+            
+        
+
+        circle_marker_1256751033c59047fed70560f3888c07.bindPopup(popup_f04b179920b677f3f3ebe93f031530c6)
+        ;
+
+        
+    
+    
+            var circle_marker_0ed64c490d682852c4853a03518f7a79 = L.circleMarker(
+                [-33.4180246, -70.6053313],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_d51fa3a3a2ae83684161d6b2895030f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cb7f8acc4a0fbd63d1a211c9a3e7ffc = $(`<div id="html_7cb7f8acc4a0fbd63d1a211c9a3e7ffc" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 4<br>Node ID: 1147<br>Dirección: AV. VITACURA 426</div>`)[0];
+                popup_d51fa3a3a2ae83684161d6b2895030f9.setContent(html_7cb7f8acc4a0fbd63d1a211c9a3e7ffc);
+            
+        
+
+        circle_marker_0ed64c490d682852c4853a03518f7a79.bindPopup(popup_d51fa3a3a2ae83684161d6b2895030f9)
+        ;
+
+        
+    
+    
+            var circle_marker_02b5f1454386dcfa1effbb2db3e916ee = L.circleMarker(
+                [-33.4174043, -70.6050653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_b563f867e80bc441e9d63d3c88b43d36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2e610c3f120b29858e70fdea57a8266 = $(`<div id="html_d2e610c3f120b29858e70fdea57a8266" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 5<br>Node ID: 1133<br>Dirección: AV. VITACURA 1454</div>`)[0];
+                popup_b563f867e80bc441e9d63d3c88b43d36.setContent(html_d2e610c3f120b29858e70fdea57a8266);
+            
+        
+
+        circle_marker_02b5f1454386dcfa1effbb2db3e916ee.bindPopup(popup_b563f867e80bc441e9d63d3c88b43d36)
+        ;
+
+        
+    
+    
+            var circle_marker_b6ccef8d0a2f64a8890434d51f311dce = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f446a78360fc678c34bff5cc3a87a60);
+        
+    
+        var popup_8ab488d4d32e958e5617131f64ffa264 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55f8cbeb54beeac30eb2d196ab04e880 = $(`<div id="html_55f8cbeb54beeac30eb2d196ab04e880" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 1<br>Orden: 6<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_8ab488d4d32e958e5617131f64ffa264.setContent(html_55f8cbeb54beeac30eb2d196ab04e880);
+            
+        
+
+        circle_marker_b6ccef8d0a2f64a8890434d51f311dce.bindPopup(popup_8ab488d4d32e958e5617131f64ffa264)
+        ;
+
+        
+    
+    
+            circle_marker_b6ccef8d0a2f64a8890434d51f311dce.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_2d623679507c2aa3f90e8e47d86e8466 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_b36e45a18a3506e1b2c4a2388895b336 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.4209482, -70.5979701], [-33.4231826, -70.5951261], [-33.4154357, -70.5897048], [-33.4154092, -70.5895753], [-33.3993198, -70.5892384], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+            poly_line_b36e45a18a3506e1b2c4a2388895b336.bindTooltip(
+                `<div>
+                     AM | Cluster 1 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e28a224a39e670002965821ec79d892 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_822793a371491c6264e13c490c5618cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_299c355b23137b0990cb7d0328add5a8 = $(`<div id="html_299c355b23137b0990cb7d0328add5a8" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_822793a371491c6264e13c490c5618cf.setContent(html_299c355b23137b0990cb7d0328add5a8);
+            
+        
+
+        circle_marker_4e28a224a39e670002965821ec79d892.bindPopup(popup_822793a371491c6264e13c490c5618cf)
+        ;
+
+        
+    
+    
+            circle_marker_4e28a224a39e670002965821ec79d892.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f542dd50393dcd0b0919e6aabbef65e1 = L.circleMarker(
+                [-33.4209482, -70.5979701],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_e608231dcad051ff6a92465186c2305c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5bc3a42a4ad43de723d3ee022e368bb = $(`<div id="html_a5bc3a42a4ad43de723d3ee022e368bb" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 1<br>Node ID: 1040<br>Dirección: AV. TOBALABA 454</div>`)[0];
+                popup_e608231dcad051ff6a92465186c2305c.setContent(html_a5bc3a42a4ad43de723d3ee022e368bb);
+            
+        
+
+        circle_marker_f542dd50393dcd0b0919e6aabbef65e1.bindPopup(popup_e608231dcad051ff6a92465186c2305c)
+        ;
+
+        
+    
+    
+            var circle_marker_daf1dc1f4983f62e8b64e754b65a36b9 = L.circleMarker(
+                [-33.4231826, -70.5951261],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_a86b8e883ad75a364ce63d9e606ff655 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d74e02d10895a7142a23d46e1b80ef8 = $(`<div id="html_4d74e02d10895a7142a23d46e1b80ef8" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 2<br>Node ID: 1065<br>Dirección: AV. TOBALABA 803</div>`)[0];
+                popup_a86b8e883ad75a364ce63d9e606ff655.setContent(html_4d74e02d10895a7142a23d46e1b80ef8);
+            
+        
+
+        circle_marker_daf1dc1f4983f62e8b64e754b65a36b9.bindPopup(popup_a86b8e883ad75a364ce63d9e606ff655)
+        ;
+
+        
+    
+    
+            var circle_marker_565b96d957778e30c907c6fc4c8c09f5 = L.circleMarker(
+                [-33.4154357, -70.5897048],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_96a087a7b148c96c8edc763c06867952 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_262d41f6e8136d8aa09bc8832470bb2f = $(`<div id="html_262d41f6e8136d8aa09bc8832470bb2f" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 3<br>Node ID: 55<br>Dirección: AV. APOQUINDO 1918</div>`)[0];
+                popup_96a087a7b148c96c8edc763c06867952.setContent(html_262d41f6e8136d8aa09bc8832470bb2f);
+            
+        
+
+        circle_marker_565b96d957778e30c907c6fc4c8c09f5.bindPopup(popup_96a087a7b148c96c8edc763c06867952)
+        ;
+
+        
+    
+    
+            var circle_marker_aafddce5a1c85998a62d5d3ef8e118f7 = L.circleMarker(
+                [-33.4154092, -70.5895753],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_671282cca7e029fbbbde7d95999a241f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fd8341eb828548d552f83540f33d756 = $(`<div id="html_2fd8341eb828548d552f83540f33d756" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 4<br>Node ID: 48<br>Dirección: AV. APOQUINDO 1250</div>`)[0];
+                popup_671282cca7e029fbbbde7d95999a241f.setContent(html_2fd8341eb828548d552f83540f33d756);
+            
+        
+
+        circle_marker_aafddce5a1c85998a62d5d3ef8e118f7.bindPopup(popup_671282cca7e029fbbbde7d95999a241f)
+        ;
+
+        
+    
+    
+            var circle_marker_41644ec0f711c70ea48d252b3d71076f = L.circleMarker(
+                [-33.3993198, -70.5892384],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_0e7bf0418c134e716380033bcfcfba7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53279662b8fde1aedee1c4d0ad0b17f6 = $(`<div id="html_53279662b8fde1aedee1c4d0ad0b17f6" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 5<br>Node ID: 1405<br>Dirección: AVENIDA VITACURA 4256</div>`)[0];
+                popup_0e7bf0418c134e716380033bcfcfba7f.setContent(html_53279662b8fde1aedee1c4d0ad0b17f6);
+            
+        
+
+        circle_marker_41644ec0f711c70ea48d252b3d71076f.bindPopup(popup_0e7bf0418c134e716380033bcfcfba7f)
+        ;
+
+        
+    
+    
+            var circle_marker_dca89507f3540b26c6472074e695fe25 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d623679507c2aa3f90e8e47d86e8466);
+        
+    
+        var popup_4528567d249d70268c20895d9e580805 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae982496ff022abbe705af289ad28ba5 = $(`<div id="html_ae982496ff022abbe705af289ad28ba5" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 1<br>Ruta: 2<br>Orden: 6<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_4528567d249d70268c20895d9e580805.setContent(html_ae982496ff022abbe705af289ad28ba5);
+            
+        
+
+        circle_marker_dca89507f3540b26c6472074e695fe25.bindPopup(popup_4528567d249d70268c20895d9e580805)
+        ;
+
+        
+    
+    
+            circle_marker_dca89507f3540b26c6472074e695fe25.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_efd1fc73750e572f87ec3e802f814b22 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_739d42b9f98cc8d2f0b3ef627142b840 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.438971360737774, -70.68787532598256], [-33.4569332, -70.7035986], [-33.4885546, -70.7518867], [-33.384867033333336, -70.67986276666667], [-33.40932678484848, -70.56787636565656], [-33.407626154545454, -70.55991624318182], [-33.399413, -70.5525788], [-33.3883495, -70.5446598], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+            poly_line_739d42b9f98cc8d2f0b3ef627142b840.bindTooltip(
+                `<div>
+                     AM | Cluster 2 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fd639548e41580a52679d1a81a1d695 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_4e35a008c331297af384dc5d6da103db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73ed494bdbfd2a6418481a43f7a0da47 = $(`<div id="html_73ed494bdbfd2a6418481a43f7a0da47" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_4e35a008c331297af384dc5d6da103db.setContent(html_73ed494bdbfd2a6418481a43f7a0da47);
+            
+        
+
+        circle_marker_1fd639548e41580a52679d1a81a1d695.bindPopup(popup_4e35a008c331297af384dc5d6da103db)
+        ;
+
+        
+    
+    
+            circle_marker_1fd639548e41580a52679d1a81a1d695.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d134894915a753f864a6c36b928601f3 = L.circleMarker(
+                [-33.438971360737774, -70.68787532598256],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_d4b39f4a4bcdbef1abffcfa1e59f341d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7115cdd6381c131c8b399a883290bc0 = $(`<div id="html_f7115cdd6381c131c8b399a883290bc0" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 1<br>Node ID: 2108<br>Dirección: CALLE SANTO DOMINGO 6777</div>`)[0];
+                popup_d4b39f4a4bcdbef1abffcfa1e59f341d.setContent(html_f7115cdd6381c131c8b399a883290bc0);
+            
+        
+
+        circle_marker_d134894915a753f864a6c36b928601f3.bindPopup(popup_d4b39f4a4bcdbef1abffcfa1e59f341d)
+        ;
+
+        
+    
+    
+            var circle_marker_9ac1b9483d70222aae839c08b742099a = L.circleMarker(
+                [-33.4569332, -70.7035986],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_27a29a82fd55a1c9882332f8237bef14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_019b6282f1976c81c6a6a135e4f3a8ec = $(`<div id="html_019b6282f1976c81c6a6a135e4f3a8ec" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 2<br>Node ID: 515<br>Dirección: AV. LIBERTADOR BERNARDO O HIGGINS 4908</div>`)[0];
+                popup_27a29a82fd55a1c9882332f8237bef14.setContent(html_019b6282f1976c81c6a6a135e4f3a8ec);
+            
+        
+
+        circle_marker_9ac1b9483d70222aae839c08b742099a.bindPopup(popup_27a29a82fd55a1c9882332f8237bef14)
+        ;
+
+        
+    
+    
+            var circle_marker_9181fada51dcf981c18f7a73aeffe77a = L.circleMarker(
+                [-33.4885546, -70.7518867],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_b9479b9577fbc53ce6b091784024a111 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1162287e7675c2a33a4f4cee2c91af7 = $(`<div id="html_a1162287e7675c2a33a4f4cee2c91af7" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 3<br>Node ID: 770<br>Dirección: AV. PAJARITOS 3684</div>`)[0];
+                popup_b9479b9577fbc53ce6b091784024a111.setContent(html_a1162287e7675c2a33a4f4cee2c91af7);
+            
+        
+
+        circle_marker_9181fada51dcf981c18f7a73aeffe77a.bindPopup(popup_b9479b9577fbc53ce6b091784024a111)
+        ;
+
+        
+    
+    
+            var circle_marker_b134676beac33c97f1c51e346556357b = L.circleMarker(
+                [-33.384867033333336, -70.67986276666667],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_2996dd740146944002f0ff96f6fb9430 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b001e63941a21118d0df61808451d66 = $(`<div id="html_5b001e63941a21118d0df61808451d66" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 4<br>Node ID: 1222<br>Dirección: AVENIDA INDEPENDENCIA 4789</div>`)[0];
+                popup_2996dd740146944002f0ff96f6fb9430.setContent(html_5b001e63941a21118d0df61808451d66);
+            
+        
+
+        circle_marker_b134676beac33c97f1c51e346556357b.bindPopup(popup_2996dd740146944002f0ff96f6fb9430)
+        ;
+
+        
+    
+    
+            var circle_marker_807211fc23d78429b7b05b20618cedcd = L.circleMarker(
+                [-33.40932678484848, -70.56787636565656],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_9155e6707c9bbc6d5daa6b9f71ebac46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3828ac4becb30784fcbd7d70248a7221 = $(`<div id="html_3828ac4becb30784fcbd7d70248a7221" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 5<br>Node ID: 79<br>Dirección: AV. APOQUINDO 5983</div>`)[0];
+                popup_9155e6707c9bbc6d5daa6b9f71ebac46.setContent(html_3828ac4becb30784fcbd7d70248a7221);
+            
+        
+
+        circle_marker_807211fc23d78429b7b05b20618cedcd.bindPopup(popup_9155e6707c9bbc6d5daa6b9f71ebac46)
+        ;
+
+        
+    
+    
+            var circle_marker_9129fd2e67118d7bc839e09e4ab7b208 = L.circleMarker(
+                [-33.407626154545454, -70.55991624318182],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_39e6bcc40910dfa6bf7b3e5fa6f8cdc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66bd56b4c70f39406611f9e382499718 = $(`<div id="html_66bd56b4c70f39406611f9e382499718" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 6<br>Node ID: 84<br>Dirección: AV. APOQUINDO 6717</div>`)[0];
+                popup_39e6bcc40910dfa6bf7b3e5fa6f8cdc3.setContent(html_66bd56b4c70f39406611f9e382499718);
+            
+        
+
+        circle_marker_9129fd2e67118d7bc839e09e4ab7b208.bindPopup(popup_39e6bcc40910dfa6bf7b3e5fa6f8cdc3)
+        ;
+
+        
+    
+    
+            var circle_marker_f35de2e197451a5ef1821d7854f52f66 = L.circleMarker(
+                [-33.399413, -70.5525788],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_039d8361cc0becd7781f77f7f0f116da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_604d0e81983e26e1d724777389a23427 = $(`<div id="html_604d0e81983e26e1d724777389a23427" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 7<br>Node ID: 1278<br>Dirección: AVENIDA LAS CONDES 8020</div>`)[0];
+                popup_039d8361cc0becd7781f77f7f0f116da.setContent(html_604d0e81983e26e1d724777389a23427);
+            
+        
+
+        circle_marker_f35de2e197451a5ef1821d7854f52f66.bindPopup(popup_039d8361cc0becd7781f77f7f0f116da)
+        ;
+
+        
+    
+    
+            var circle_marker_e02a8e4422df465cad5c4a95913f2412 = L.circleMarker(
+                [-33.3883495, -70.5446598],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_ff982707903b2adc2846818e1f1a17ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1d3ed30848db5255fdb25861f43cec1 = $(`<div id="html_b1d3ed30848db5255fdb25861f43cec1" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 8<br>Node ID: 373<br>Dirección: AV. KENNEDY 9275</div>`)[0];
+                popup_ff982707903b2adc2846818e1f1a17ac.setContent(html_b1d3ed30848db5255fdb25861f43cec1);
+            
+        
+
+        circle_marker_e02a8e4422df465cad5c4a95913f2412.bindPopup(popup_ff982707903b2adc2846818e1f1a17ac)
+        ;
+
+        
+    
+    
+            var circle_marker_f18f9f025103efe1d0af6f1ac4ce36a2 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_efd1fc73750e572f87ec3e802f814b22);
+        
+    
+        var popup_0fc7db392d38fe9a7d07e6d69ffb5ef4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e412238440ff81323d9a061418635e39 = $(`<div id="html_e412238440ff81323d9a061418635e39" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 1<br>Orden: 9<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_0fc7db392d38fe9a7d07e6d69ffb5ef4.setContent(html_e412238440ff81323d9a061418635e39);
+            
+        
+
+        circle_marker_f18f9f025103efe1d0af6f1ac4ce36a2.bindPopup(popup_0fc7db392d38fe9a7d07e6d69ffb5ef4)
+        ;
+
+        
+    
+    
+            circle_marker_f18f9f025103efe1d0af6f1ac4ce36a2.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_ed2e9bccc1d4bde215e51f3d48d2bb13 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.3859827, -70.5628986875], [-33.38589567222222, -70.56153729444445], [-33.3841501, -70.5523583], [-33.38904613999576, -70.54005416426546], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+            poly_line_ed2e9bccc1d4bde215e51f3d48d2bb13.bindTooltip(
+                `<div>
+                     AM | Cluster 2 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c8b5dc2d074218ba3bbe1553844c49f = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+        var popup_9e98a825575b140694c8ae0b775ab982 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73f5698a8b33633dd62657c9bd7105d3 = $(`<div id="html_73f5698a8b33633dd62657c9bd7105d3" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_9e98a825575b140694c8ae0b775ab982.setContent(html_73f5698a8b33633dd62657c9bd7105d3);
+            
+        
+
+        circle_marker_0c8b5dc2d074218ba3bbe1553844c49f.bindPopup(popup_9e98a825575b140694c8ae0b775ab982)
+        ;
+
+        
+    
+    
+            circle_marker_0c8b5dc2d074218ba3bbe1553844c49f.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91874db366b28e3a9855545f82e8e743 = L.circleMarker(
+                [-33.3859827, -70.5628986875],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+        var popup_ff91ea2e931629bd88e4ae061f4ef343 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42d3d5512b36e7bb5c057fa082d82f26 = $(`<div id="html_42d3d5512b36e7bb5c057fa082d82f26" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 2<br>Orden: 1<br>Node ID: 1163<br>Dirección: AV. VITACURA 7328</div>`)[0];
+                popup_ff91ea2e931629bd88e4ae061f4ef343.setContent(html_42d3d5512b36e7bb5c057fa082d82f26);
+            
+        
+
+        circle_marker_91874db366b28e3a9855545f82e8e743.bindPopup(popup_ff91ea2e931629bd88e4ae061f4ef343)
+        ;
+
+        
+    
+    
+            var circle_marker_2069705634f2547a44936d9b42b9e4a5 = L.circleMarker(
+                [-33.38589567222222, -70.56153729444445],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+        var popup_6fd1090d875fd389538f947b76e288af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1108ac080ea7dcaf317ba0d539d9c6c = $(`<div id="html_c1108ac080ea7dcaf317ba0d539d9c6c" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 2<br>Orden: 2<br>Node ID: 1164<br>Dirección: AV. VITACURA 7462</div>`)[0];
+                popup_6fd1090d875fd389538f947b76e288af.setContent(html_c1108ac080ea7dcaf317ba0d539d9c6c);
+            
+        
+
+        circle_marker_2069705634f2547a44936d9b42b9e4a5.bindPopup(popup_6fd1090d875fd389538f947b76e288af)
+        ;
+
+        
+    
+    
+            var circle_marker_42930e7568203e7dc88d3c1fee1eb8b1 = L.circleMarker(
+                [-33.3841501, -70.5523583],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+        var popup_52f10b2509a97fa57f711b7d5c901c8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b39050cbf70c2e3f5226d13120d4ac50 = $(`<div id="html_b39050cbf70c2e3f5226d13120d4ac50" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 2<br>Orden: 3<br>Node ID: 1173<br>Dirección: AV. VITACURA 8663</div>`)[0];
+                popup_52f10b2509a97fa57f711b7d5c901c8b.setContent(html_b39050cbf70c2e3f5226d13120d4ac50);
+            
+        
+
+        circle_marker_42930e7568203e7dc88d3c1fee1eb8b1.bindPopup(popup_52f10b2509a97fa57f711b7d5c901c8b)
+        ;
+
+        
+    
+    
+            var circle_marker_f75c554c1644a2a22c32335868956098 = L.circleMarker(
+                [-33.38904613999576, -70.54005416426546],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+        var popup_d88aa9752e5c07a5519918ef3ea1696b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e68d04a1dc8658e584444be7e1407c9 = $(`<div id="html_6e68d04a1dc8658e584444be7e1407c9" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 2<br>Orden: 4<br>Node ID: 442<br>Dirección: AV. LAS CONDES 2186</div>`)[0];
+                popup_d88aa9752e5c07a5519918ef3ea1696b.setContent(html_6e68d04a1dc8658e584444be7e1407c9);
+            
+        
+
+        circle_marker_f75c554c1644a2a22c32335868956098.bindPopup(popup_d88aa9752e5c07a5519918ef3ea1696b)
+        ;
+
+        
+    
+    
+            var circle_marker_ff58ccc03e637cd67210d7585ff25330 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8);
+        
+    
+        var popup_9bf727dab8193c0e552cd6c49cd2e982 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_152ccf33a1f52720db5dabf82daceefe = $(`<div id="html_152ccf33a1f52720db5dabf82daceefe" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 2<br>Ruta: 2<br>Orden: 5<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_9bf727dab8193c0e552cd6c49cd2e982.setContent(html_152ccf33a1f52720db5dabf82daceefe);
+            
+        
+
+        circle_marker_ff58ccc03e637cd67210d7585ff25330.bindPopup(popup_9bf727dab8193c0e552cd6c49cd2e982)
+        ;
+
+        
+    
+    
+            circle_marker_ff58ccc03e637cd67210d7585ff25330.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_d8d9cf40f8308ac1179db7bead5e6b76 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_73538bda9d89b0c9a431e08187cde270 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.43821500816327, -70.6754759367347], [-33.4394687125, -70.67269285], [-33.438738201983064, -70.66443720992424], [-33.438738201983064, -70.66443720992424], [-33.438738201983064, -70.66443720992424], [-33.438738201983064, -70.66443720992424], [-33.43972137647059, -70.6625057235294], [-33.439644149230105, -70.66251983715254], [-33.43720955714286, -70.6615650632653], [-33.436656955578805, -70.65568127045138], [-33.436656955578805, -70.65568127045138], [-33.52639349251701, -70.63557370657597], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+            poly_line_73538bda9d89b0c9a431e08187cde270.bindTooltip(
+                `<div>
+                     AM | Cluster 4 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a7bc6770f490fe38aec3bf326f5d138 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_ed6b0c2be56d0a3d015cd62ec690f343 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18cfc7f5d8ff018bd170474ca7a9a1d5 = $(`<div id="html_18cfc7f5d8ff018bd170474ca7a9a1d5" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_ed6b0c2be56d0a3d015cd62ec690f343.setContent(html_18cfc7f5d8ff018bd170474ca7a9a1d5);
+            
+        
+
+        circle_marker_2a7bc6770f490fe38aec3bf326f5d138.bindPopup(popup_ed6b0c2be56d0a3d015cd62ec690f343)
+        ;
+
+        
+    
+    
+            circle_marker_2a7bc6770f490fe38aec3bf326f5d138.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f75f56a061bee971ce63d180810b5c3 = L.circleMarker(
+                [-33.43821500816327, -70.6754759367347],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_f63c732dc143f27ae6b56a35f1859511 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_822978a16174905df2a4c46def58557f = $(`<div id="html_822978a16174905df2a4c46def58557f" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 1<br>Node ID: 2087<br>Dirección: CALLE SANTO DOMINGO 2882</div>`)[0];
+                popup_f63c732dc143f27ae6b56a35f1859511.setContent(html_822978a16174905df2a4c46def58557f);
+            
+        
+
+        circle_marker_4f75f56a061bee971ce63d180810b5c3.bindPopup(popup_f63c732dc143f27ae6b56a35f1859511)
+        ;
+
+        
+    
+    
+            var circle_marker_f4b11e3e3324bb2f608a92ce5d8d6e6f = L.circleMarker(
+                [-33.4394687125, -70.67269285],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_ee64932ecd1aba9dace485021f8249b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19581001568add8b0d877e409c9b7292 = $(`<div id="html_19581001568add8b0d877e409c9b7292" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 2<br>Node ID: 1593<br>Dirección: CALLE CATEDRAL 2615</div>`)[0];
+                popup_ee64932ecd1aba9dace485021f8249b1.setContent(html_19581001568add8b0d877e409c9b7292);
+            
+        
+
+        circle_marker_f4b11e3e3324bb2f608a92ce5d8d6e6f.bindPopup(popup_ee64932ecd1aba9dace485021f8249b1)
+        ;
+
+        
+    
+    
+            var circle_marker_ed51b1f87c9e8e7d58b31e241c26d605 = L.circleMarker(
+                [-33.438738201983064, -70.66443720992424],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_9dacb37e69e9073227d98f2a7a0e5745 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb33e954a329b6cddcd6eca3b62c5ec4 = $(`<div id="html_fb33e954a329b6cddcd6eca3b62c5ec4" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 3<br>Node ID: 1588<br>Dirección: CALLE CATEDRAL 102</div>`)[0];
+                popup_9dacb37e69e9073227d98f2a7a0e5745.setContent(html_fb33e954a329b6cddcd6eca3b62c5ec4);
+            
+        
+
+        circle_marker_ed51b1f87c9e8e7d58b31e241c26d605.bindPopup(popup_9dacb37e69e9073227d98f2a7a0e5745)
+        ;
+
+        
+    
+    
+            var circle_marker_f22ea154a7012d6b80b27b2032a90d70 = L.circleMarker(
+                [-33.438738201983064, -70.66443720992424],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_b65bc5b075dda5e3c23dd38997ce0b04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3657b06ea161e3a347fbdff4fcbd6551 = $(`<div id="html_3657b06ea161e3a347fbdff4fcbd6551" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 4<br>Node ID: 1597<br>Dirección: CALLE CATEDRAL 3304</div>`)[0];
+                popup_b65bc5b075dda5e3c23dd38997ce0b04.setContent(html_3657b06ea161e3a347fbdff4fcbd6551);
+            
+        
+
+        circle_marker_f22ea154a7012d6b80b27b2032a90d70.bindPopup(popup_b65bc5b075dda5e3c23dd38997ce0b04)
+        ;
+
+        
+    
+    
+            var circle_marker_b987daabb0c032c2fe9f65982a112406 = L.circleMarker(
+                [-33.438738201983064, -70.66443720992424],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_7099273a938872d00251ec2bbd640720 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd3c263cec6b71f8568ba7b8cc289295 = $(`<div id="html_dd3c263cec6b71f8568ba7b8cc289295" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 5<br>Node ID: 1598<br>Dirección: CALLE CATEDRAL 339</div>`)[0];
+                popup_7099273a938872d00251ec2bbd640720.setContent(html_dd3c263cec6b71f8568ba7b8cc289295);
+            
+        
+
+        circle_marker_b987daabb0c032c2fe9f65982a112406.bindPopup(popup_7099273a938872d00251ec2bbd640720)
+        ;
+
+        
+    
+    
+            var circle_marker_c089e7cd91726eddcd33f743af11f0b7 = L.circleMarker(
+                [-33.438738201983064, -70.66443720992424],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_1ee9120592ef37ef37062a2c6a920a42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05aaf08926ca3e37b68cc95b18eaa350 = $(`<div id="html_05aaf08926ca3e37b68cc95b18eaa350" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 6<br>Node ID: 1634<br>Dirección: CALLE CATEDRAL 9848</div>`)[0];
+                popup_1ee9120592ef37ef37062a2c6a920a42.setContent(html_05aaf08926ca3e37b68cc95b18eaa350);
+            
+        
+
+        circle_marker_c089e7cd91726eddcd33f743af11f0b7.bindPopup(popup_1ee9120592ef37ef37062a2c6a920a42)
+        ;
+
+        
+    
+    
+            var circle_marker_6a48fc6fc9fd939421c73a28633b4813 = L.circleMarker(
+                [-33.43972137647059, -70.6625057235294],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_f3bd0df452837210c0248a93ce8ab1a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d75efe69f5f30247c386a469c77b1e4 = $(`<div id="html_9d75efe69f5f30247c386a469c77b1e4" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 7<br>Node ID: 1643<br>Dirección: CALLE COMPAÑÍA DE JESÚS 1826</div>`)[0];
+                popup_f3bd0df452837210c0248a93ce8ab1a1.setContent(html_9d75efe69f5f30247c386a469c77b1e4);
+            
+        
+
+        circle_marker_6a48fc6fc9fd939421c73a28633b4813.bindPopup(popup_f3bd0df452837210c0248a93ce8ab1a1)
+        ;
+
+        
+    
+    
+            var circle_marker_7251563dac370012a9d06c355be813a1 = L.circleMarker(
+                [-33.439644149230105, -70.66251983715254],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_cb7505ca83077e78050209169f18107d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11a80f0a301fc6291db79379d99e6e05 = $(`<div id="html_11a80f0a301fc6291db79379d99e6e05" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 8<br>Node ID: 1672<br>Dirección: CALLE COMPAÑÍA DE JESÚS 7475</div>`)[0];
+                popup_cb7505ca83077e78050209169f18107d.setContent(html_11a80f0a301fc6291db79379d99e6e05);
+            
+        
+
+        circle_marker_7251563dac370012a9d06c355be813a1.bindPopup(popup_cb7505ca83077e78050209169f18107d)
+        ;
+
+        
+    
+    
+            var circle_marker_c6ea7f336c40c469ccfc3cbd95087294 = L.circleMarker(
+                [-33.43720955714286, -70.6615650632653],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_65001fd5f25a27bf25d1ad725497b58f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17b927204ed28ae17f0e6fd2d08d8e3c = $(`<div id="html_17b927204ed28ae17f0e6fd2d08d8e3c" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 9<br>Node ID: 2081<br>Dirección: CALLE SANTO DOMINGO 1727</div>`)[0];
+                popup_65001fd5f25a27bf25d1ad725497b58f.setContent(html_17b927204ed28ae17f0e6fd2d08d8e3c);
+            
+        
+
+        circle_marker_c6ea7f336c40c469ccfc3cbd95087294.bindPopup(popup_65001fd5f25a27bf25d1ad725497b58f)
+        ;
+
+        
+    
+    
+            var circle_marker_38cfc140bc67f0f99bb7d3862f526bdc = L.circleMarker(
+                [-33.436656955578805, -70.65568127045138],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_8fa1bb8056124d136e78187c8be4f03e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05c3e68b0a462f8af4d666eddebcc40f = $(`<div id="html_05c3e68b0a462f8af4d666eddebcc40f" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 10<br>Node ID: 2149<br>Dirección: CALLE TEATINOS 3426</div>`)[0];
+                popup_8fa1bb8056124d136e78187c8be4f03e.setContent(html_05c3e68b0a462f8af4d666eddebcc40f);
+            
+        
+
+        circle_marker_38cfc140bc67f0f99bb7d3862f526bdc.bindPopup(popup_8fa1bb8056124d136e78187c8be4f03e)
+        ;
+
+        
+    
+    
+            var circle_marker_36f2679b923eb9eee3248d00909a2fb3 = L.circleMarker(
+                [-33.436656955578805, -70.65568127045138],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_8745ce6ba56879d41f7a2fb00fa2e101 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4d7ae51cdb04dd274b2b0c1e5102d74 = $(`<div id="html_f4d7ae51cdb04dd274b2b0c1e5102d74" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 11<br>Node ID: 2168<br>Dirección: CALLE TEATINOS 7022</div>`)[0];
+                popup_8745ce6ba56879d41f7a2fb00fa2e101.setContent(html_f4d7ae51cdb04dd274b2b0c1e5102d74);
+            
+        
+
+        circle_marker_36f2679b923eb9eee3248d00909a2fb3.bindPopup(popup_8745ce6ba56879d41f7a2fb00fa2e101)
+        ;
+
+        
+    
+    
+            var circle_marker_cb741ab34625b7343d02bd4489bf36a6 = L.circleMarker(
+                [-33.52639349251701, -70.63557370657597],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_cd170648cda893046fb039e4898df02f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a968860c0eb0fbee6a4985f0b236189d = $(`<div id="html_a968860c0eb0fbee6a4985f0b236189d" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 12<br>Node ID: 998<br>Dirección: AV. SANTA ROSA 7074</div>`)[0];
+                popup_cd170648cda893046fb039e4898df02f.setContent(html_a968860c0eb0fbee6a4985f0b236189d);
+            
+        
+
+        circle_marker_cb741ab34625b7343d02bd4489bf36a6.bindPopup(popup_cd170648cda893046fb039e4898df02f)
+        ;
+
+        
+    
+    
+            var circle_marker_0cad532daf7f7ab3b59286489903b2a5 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d8d9cf40f8308ac1179db7bead5e6b76);
+        
+    
+        var popup_fbe9b52afe9315ab7f1227c6f9891d45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_209f72af3f756217ee4351b890f6c106 = $(`<div id="html_209f72af3f756217ee4351b890f6c106" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 1<br>Orden: 13<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_fbe9b52afe9315ab7f1227c6f9891d45.setContent(html_209f72af3f756217ee4351b890f6c106);
+            
+        
+
+        circle_marker_0cad532daf7f7ab3b59286489903b2a5.bindPopup(popup_fbe9b52afe9315ab7f1227c6f9891d45)
+        ;
+
+        
+    
+    
+            circle_marker_0cad532daf7f7ab3b59286489903b2a5.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_b7e4e7b0641174d25a8eedf14402bbd0 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.5014507, -70.6629139], [-33.5031058, -70.654643325], [-33.5052577, -70.6470646], [-33.5247055, -70.6007136], [-33.5514238, -70.6323222], [-33.5476393, -70.6698263], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+            poly_line_b7e4e7b0641174d25a8eedf14402bbd0.bindTooltip(
+                `<div>
+                     AM | Cluster 4 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c02dbeb748b3e760ebd0186d723b6d2c = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_e4ba35958b6593a5a7a270b0fc631618 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_167bfc1ac2b375cd938ab45e19eeb9b1 = $(`<div id="html_167bfc1ac2b375cd938ab45e19eeb9b1" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_e4ba35958b6593a5a7a270b0fc631618.setContent(html_167bfc1ac2b375cd938ab45e19eeb9b1);
+            
+        
+
+        circle_marker_c02dbeb748b3e760ebd0186d723b6d2c.bindPopup(popup_e4ba35958b6593a5a7a270b0fc631618)
+        ;
+
+        
+    
+    
+            circle_marker_c02dbeb748b3e760ebd0186d723b6d2c.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f8e60bcd657099f2798dfc0a246092e = L.circleMarker(
+                [-33.5014507, -70.6629139],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_0bdbcbd9bfca55f152e4a367f10ec617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04ee76eeabbe6d70c91ab5dc572b814b = $(`<div id="html_04ee76eeabbe6d70c91ab5dc572b814b" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 1<br>Node ID: 106<br>Dirección: AV. DEPARTAMENTAL 1600</div>`)[0];
+                popup_0bdbcbd9bfca55f152e4a367f10ec617.setContent(html_04ee76eeabbe6d70c91ab5dc572b814b);
+            
+        
+
+        circle_marker_8f8e60bcd657099f2798dfc0a246092e.bindPopup(popup_0bdbcbd9bfca55f152e4a367f10ec617)
+        ;
+
+        
+    
+    
+            var circle_marker_0a06dadef5a3817e415fc552acd63004 = L.circleMarker(
+                [-33.5031058, -70.654643325],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_a7b117b46f59fead4c9657afa5cd2cba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c9de4fa4d00340081fd47620fa773e8 = $(`<div id="html_4c9de4fa4d00340081fd47620fa773e8" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 2<br>Node ID: 2232<br>Dirección: GRAN AVENIDA JOSÉ MIGUEL CARRERA 5414</div>`)[0];
+                popup_a7b117b46f59fead4c9657afa5cd2cba.setContent(html_4c9de4fa4d00340081fd47620fa773e8);
+            
+        
+
+        circle_marker_0a06dadef5a3817e415fc552acd63004.bindPopup(popup_a7b117b46f59fead4c9657afa5cd2cba)
+        ;
+
+        
+    
+    
+            var circle_marker_cd1d6d4417a6e166b5b09162c75f1d2e = L.circleMarker(
+                [-33.5052577, -70.6470646],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_e835ced601fcd87be9131138b5070d98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5091ed7feac878c53eed9ab7c1eba4b = $(`<div id="html_d5091ed7feac878c53eed9ab7c1eba4b" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 3<br>Node ID: 143<br>Dirección: AV. DEPARTAMENTAL 820</div>`)[0];
+                popup_e835ced601fcd87be9131138b5070d98.setContent(html_d5091ed7feac878c53eed9ab7c1eba4b);
+            
+        
+
+        circle_marker_cd1d6d4417a6e166b5b09162c75f1d2e.bindPopup(popup_e835ced601fcd87be9131138b5070d98)
+        ;
+
+        
+    
+    
+            var circle_marker_11c9158141e36e3ef7128444fe50346b = L.circleMarker(
+                [-33.5247055, -70.6007136],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_028bab05a9d4afb6d8be9112c5dc5dca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7436deff7f630c17231c8073d59d11d0 = $(`<div id="html_7436deff7f630c17231c8073d59d11d0" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 4<br>Node ID: 10<br>Dirección: AV. AMÉRICO VESPUCIO 2795</div>`)[0];
+                popup_028bab05a9d4afb6d8be9112c5dc5dca.setContent(html_7436deff7f630c17231c8073d59d11d0);
+            
+        
+
+        circle_marker_11c9158141e36e3ef7128444fe50346b.bindPopup(popup_028bab05a9d4afb6d8be9112c5dc5dca)
+        ;
+
+        
+    
+    
+            var circle_marker_746169a609fd25bc03869f5fd0df728e = L.circleMarker(
+                [-33.5514238, -70.6323222],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_b80830d528a197203ae16272fe452de1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14b48d4127a81747c098710a35c04058 = $(`<div id="html_14b48d4127a81747c098710a35c04058" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 5<br>Node ID: 1017<br>Dirección: AV. SANTA ROSA 9972</div>`)[0];
+                popup_b80830d528a197203ae16272fe452de1.setContent(html_14b48d4127a81747c098710a35c04058);
+            
+        
+
+        circle_marker_746169a609fd25bc03869f5fd0df728e.bindPopup(popup_b80830d528a197203ae16272fe452de1)
+        ;
+
+        
+    
+    
+            var circle_marker_276f320c302c87afbd227f9db9bc6442 = L.circleMarker(
+                [-33.5476393, -70.6698263],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_84e9df1a840d9027c6e99ca9d347b70b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcb70b763c3af9f19d482efbbd081c7d = $(`<div id="html_bcb70b763c3af9f19d482efbbd081c7d" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 6<br>Node ID: 2251<br>Dirección: GRAN AVENIDA JOSÉ MIGUEL CARRERA 9617</div>`)[0];
+                popup_84e9df1a840d9027c6e99ca9d347b70b.setContent(html_bcb70b763c3af9f19d482efbbd081c7d);
+            
+        
+
+        circle_marker_276f320c302c87afbd227f9db9bc6442.bindPopup(popup_84e9df1a840d9027c6e99ca9d347b70b)
+        ;
+
+        
+    
+    
+            var circle_marker_92d4ba2b2f51c1d81009e73f27b485f6 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd);
+        
+    
+        var popup_d9404e85649fcb665e561744d8df99b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc554346bdb3499aa2489818d3a84992 = $(`<div id="html_fc554346bdb3499aa2489818d3a84992" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 4<br>Ruta: 2<br>Orden: 7<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_d9404e85649fcb665e561744d8df99b9.setContent(html_fc554346bdb3499aa2489818d3a84992);
+            
+        
+
+        circle_marker_92d4ba2b2f51c1d81009e73f27b485f6.bindPopup(popup_d9404e85649fcb665e561744d8df99b9)
+        ;
+
+        
+    
+    
+            circle_marker_92d4ba2b2f51c1d81009e73f27b485f6.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_08d7b1681ecb7f386549825caa9eb1de = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_9244d7f5e0c4e9212719802a34b4565b = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.45799120274538, -70.64211682398948], [-33.46329967254902, -70.64719083529413], [-33.4670604, -70.6467713], [-33.470603450000006, -70.6422032], [-33.4785071, -70.6219337], [-33.46610691828572, -70.60662423314285], [-33.46445214040404, -70.60642337878787], [-33.453874464485985, -70.6061651], [-33.45343436703296, -70.61258929230769], [-33.450409379191655, -70.61310094459272], [-33.450409379191655, -70.61310094459272], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+            poly_line_9244d7f5e0c4e9212719802a34b4565b.bindTooltip(
+                `<div>
+                     AM | Cluster 7 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a46f1163a602772a2de5212f784e201 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_dcaceebfcce092f9e208ea9342f364a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3ca29a38b6835687f4089ef112f8d38 = $(`<div id="html_e3ca29a38b6835687f4089ef112f8d38" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_dcaceebfcce092f9e208ea9342f364a2.setContent(html_e3ca29a38b6835687f4089ef112f8d38);
+            
+        
+
+        circle_marker_5a46f1163a602772a2de5212f784e201.bindPopup(popup_dcaceebfcce092f9e208ea9342f364a2)
+        ;
+
+        
+    
+    
+            circle_marker_5a46f1163a602772a2de5212f784e201.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20e12f57106ff2b2f18d3d12832255c3 = L.circleMarker(
+                [-33.45799120274538, -70.64211682398948],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_afe31913d18eb15a6b070f5924dc6baa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30721410f8d4576e3f1f24661df8aa51 = $(`<div id="html_30721410f8d4576e3f1f24661df8aa51" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 1<br>Node ID: 692<br>Dirección: AV. MATTA 1637</div>`)[0];
+                popup_afe31913d18eb15a6b070f5924dc6baa.setContent(html_30721410f8d4576e3f1f24661df8aa51);
+            
+        
+
+        circle_marker_20e12f57106ff2b2f18d3d12832255c3.bindPopup(popup_afe31913d18eb15a6b070f5924dc6baa)
+        ;
+
+        
+    
+    
+            var circle_marker_9e934de62d1d32ed85e1feacc025d392 = L.circleMarker(
+                [-33.46329967254902, -70.64719083529413],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_376b64c33fb523927fcb64e0a5dd3f92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5640b8601cfe7c5249ff66527b990fc5 = $(`<div id="html_5640b8601cfe7c5249ff66527b990fc5" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 2<br>Node ID: 1480<br>Dirección: CALLE ARTURO PRAT 1385</div>`)[0];
+                popup_376b64c33fb523927fcb64e0a5dd3f92.setContent(html_5640b8601cfe7c5249ff66527b990fc5);
+            
+        
+
+        circle_marker_9e934de62d1d32ed85e1feacc025d392.bindPopup(popup_376b64c33fb523927fcb64e0a5dd3f92)
+        ;
+
+        
+    
+    
+            var circle_marker_c7604d13cb00ca51f0856e07264609c2 = L.circleMarker(
+                [-33.4670604, -70.6467713],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_f33d2e510b9f17b78c024940e4b2a778 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e335a3f29a82eed09ddc6ab3e8488895 = $(`<div id="html_e335a3f29a82eed09ddc6ab3e8488895" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 3<br>Node ID: 1482<br>Dirección: CALLE ARTURO PRAT 1596</div>`)[0];
+                popup_f33d2e510b9f17b78c024940e4b2a778.setContent(html_e335a3f29a82eed09ddc6ab3e8488895);
+            
+        
+
+        circle_marker_c7604d13cb00ca51f0856e07264609c2.bindPopup(popup_f33d2e510b9f17b78c024940e4b2a778)
+        ;
+
+        
+    
+    
+            var circle_marker_6af79471fbc01617301c771432106ac1 = L.circleMarker(
+                [-33.470603450000006, -70.6422032],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_91f97e9871d1894951fbfafff1701cf0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0330b8e75939a702b4a87839a9add92 = $(`<div id="html_a0330b8e75939a702b4a87839a9add92" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 4<br>Node ID: 1016<br>Dirección: AV. SANTA ROSA 9809</div>`)[0];
+                popup_91f97e9871d1894951fbfafff1701cf0.setContent(html_a0330b8e75939a702b4a87839a9add92);
+            
+        
+
+        circle_marker_6af79471fbc01617301c771432106ac1.bindPopup(popup_91f97e9871d1894951fbfafff1701cf0)
+        ;
+
+        
+    
+    
+            var circle_marker_f09995cd0af7f519c068b48f482a521f = L.circleMarker(
+                [-33.4785071, -70.6219337],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_7f70599d96c15d14fecaf63cab3c7ab9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f42c9dd7b624e9114d0f1b75bf2a6625 = $(`<div id="html_f42c9dd7b624e9114d0f1b75bf2a6625" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 5<br>Node ID: 1092<br>Dirección: AV. VICUÑA MACKENNA 3016</div>`)[0];
+                popup_7f70599d96c15d14fecaf63cab3c7ab9.setContent(html_f42c9dd7b624e9114d0f1b75bf2a6625);
+            
+        
+
+        circle_marker_f09995cd0af7f519c068b48f482a521f.bindPopup(popup_7f70599d96c15d14fecaf63cab3c7ab9)
+        ;
+
+        
+    
+    
+            var circle_marker_9b877b5ceb1b271c812344e627317f81 = L.circleMarker(
+                [-33.46610691828572, -70.60662423314285],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_066b74befda76c64d41e3776d6dac7bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3214a222563925a2d08fab03341f1b3 = $(`<div id="html_e3214a222563925a2d08fab03341f1b3" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 6<br>Node ID: 830<br>Dirección: AV. PEDRO DE VALDIVIA 4632</div>`)[0];
+                popup_066b74befda76c64d41e3776d6dac7bc.setContent(html_e3214a222563925a2d08fab03341f1b3);
+            
+        
+
+        circle_marker_9b877b5ceb1b271c812344e627317f81.bindPopup(popup_066b74befda76c64d41e3776d6dac7bc)
+        ;
+
+        
+    
+    
+            var circle_marker_1ab2b471c2216163b8bb194b1a0faa5b = L.circleMarker(
+                [-33.46445214040404, -70.60642337878787],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_709675efd1675619f159a735bd5f6a25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c399fb3795f70db8f6045415e384f40 = $(`<div id="html_8c399fb3795f70db8f6045415e384f40" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 7<br>Node ID: 1344<br>Dirección: AVENIDA PEDRO DE VALDIVIA 4492</div>`)[0];
+                popup_709675efd1675619f159a735bd5f6a25.setContent(html_8c399fb3795f70db8f6045415e384f40);
+            
+        
+
+        circle_marker_1ab2b471c2216163b8bb194b1a0faa5b.bindPopup(popup_709675efd1675619f159a735bd5f6a25)
+        ;
+
+        
+    
+    
+            var circle_marker_67d07301d6ce6ead9f565e88af5b04bc = L.circleMarker(
+                [-33.453874464485985, -70.6061651],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_5cdc767814f71a695ba367d335bb265e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6dea34e3d51d23cf43f4e9073847b42c = $(`<div id="html_6dea34e3d51d23cf43f4e9073847b42c" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 8<br>Node ID: 260<br>Dirección: AV. IRARRÁZAVAL 2396</div>`)[0];
+                popup_5cdc767814f71a695ba367d335bb265e.setContent(html_6dea34e3d51d23cf43f4e9073847b42c);
+            
+        
+
+        circle_marker_67d07301d6ce6ead9f565e88af5b04bc.bindPopup(popup_5cdc767814f71a695ba367d335bb265e)
+        ;
+
+        
+    
+    
+            var circle_marker_7c56e5b010bcdae4cb09e062ec263a25 = L.circleMarker(
+                [-33.45343436703296, -70.61258929230769],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_4f59005e06ce7815528fc11fce375a21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4062bf7eb7ea8390dd6e1e66bb8e6cfc = $(`<div id="html_4062bf7eb7ea8390dd6e1e66bb8e6cfc" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 9<br>Node ID: 256<br>Dirección: AV. IRARRÁZAVAL 1789</div>`)[0];
+                popup_4f59005e06ce7815528fc11fce375a21.setContent(html_4062bf7eb7ea8390dd6e1e66bb8e6cfc);
+            
+        
+
+        circle_marker_7c56e5b010bcdae4cb09e062ec263a25.bindPopup(popup_4f59005e06ce7815528fc11fce375a21)
+        ;
+
+        
+    
+    
+            var circle_marker_97a685229a944c4c2287a3042a417886 = L.circleMarker(
+                [-33.450409379191655, -70.61310094459272],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_a505f9454b79f6176870eed3add9590c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4466e64df24758da68ad44c2780ed74 = $(`<div id="html_c4466e64df24758da68ad44c2780ed74" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 10<br>Node ID: 602<br>Dirección: AV. MANUEL MONTT 4776</div>`)[0];
+                popup_a505f9454b79f6176870eed3add9590c.setContent(html_c4466e64df24758da68ad44c2780ed74);
+            
+        
+
+        circle_marker_97a685229a944c4c2287a3042a417886.bindPopup(popup_a505f9454b79f6176870eed3add9590c)
+        ;
+
+        
+    
+    
+            var circle_marker_46621398bfd7789bf5a857acf1f70bc6 = L.circleMarker(
+                [-33.450409379191655, -70.61310094459272],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_dcebc9024c0df8bdc542f8ad5ff9206c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_768e96af40d31077ed0cf3ff85aba96b = $(`<div id="html_768e96af40d31077ed0cf3ff85aba96b" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 11<br>Node ID: 606<br>Dirección: AV. MANUEL MONTT 5054</div>`)[0];
+                popup_dcebc9024c0df8bdc542f8ad5ff9206c.setContent(html_768e96af40d31077ed0cf3ff85aba96b);
+            
+        
+
+        circle_marker_46621398bfd7789bf5a857acf1f70bc6.bindPopup(popup_dcebc9024c0df8bdc542f8ad5ff9206c)
+        ;
+
+        
+    
+    
+            var circle_marker_b298e1e5ec89006d556879c6b560b7a0 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_08d7b1681ecb7f386549825caa9eb1de);
+        
+    
+        var popup_e1d068a76d12368c48dee6e4a3f63b6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_276db0b121e7f0273583c6d1ef3b80f9 = $(`<div id="html_276db0b121e7f0273583c6d1ef3b80f9" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 1<br>Orden: 12<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_e1d068a76d12368c48dee6e4a3f63b6f.setContent(html_276db0b121e7f0273583c6d1ef3b80f9);
+            
+        
+
+        circle_marker_b298e1e5ec89006d556879c6b560b7a0.bindPopup(popup_e1d068a76d12368c48dee6e4a3f63b6f)
+        ;
+
+        
+    
+    
+            circle_marker_b298e1e5ec89006d556879c6b560b7a0.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_4aca617f4cbf275bb63e2befcb532138 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_842a242f5955cd012b3068a4ff9d9cfd = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.4323119, -70.6252145], [-33.443782, -70.606382], [-33.446682, -70.605953], [-33.4477465, -70.6135514], [-33.45211752135792, -70.62996532946244], [-33.46049613448276, -70.6220507], [-33.48838930377358, -70.59933205849057], [-33.49707804581206, -70.59790889427815], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+            poly_line_842a242f5955cd012b3068a4ff9d9cfd.bindTooltip(
+                `<div>
+                     AM | Cluster 7 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34e658b4900cd799523940ebcac62071 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_c25966b23af98a7837e4965e33b022e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c650db815c41c5d31920f5f69f960d7e = $(`<div id="html_c650db815c41c5d31920f5f69f960d7e" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_c25966b23af98a7837e4965e33b022e5.setContent(html_c650db815c41c5d31920f5f69f960d7e);
+            
+        
+
+        circle_marker_34e658b4900cd799523940ebcac62071.bindPopup(popup_c25966b23af98a7837e4965e33b022e5)
+        ;
+
+        
+    
+    
+            circle_marker_34e658b4900cd799523940ebcac62071.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a537d0cf4bf77038aaec68890ee93430 = L.circleMarker(
+                [-33.4323119, -70.6252145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_dab4b60b1cf300ea4a3a901184975717 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_844c865aa091bab57c6daae71a012b27 = $(`<div id="html_844c865aa091bab57c6daae71a012b27" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 1<br>Node ID: 904<br>Dirección: AV. PROVIDENCIA 772</div>`)[0];
+                popup_dab4b60b1cf300ea4a3a901184975717.setContent(html_844c865aa091bab57c6daae71a012b27);
+            
+        
+
+        circle_marker_a537d0cf4bf77038aaec68890ee93430.bindPopup(popup_dab4b60b1cf300ea4a3a901184975717)
+        ;
+
+        
+    
+    
+            var circle_marker_1d1d53f9bcf2fca9a9529491cf8bae1f = L.circleMarker(
+                [-33.443782, -70.606382],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_0a262f6e03528295dc896d078780a6c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81b2a3cacbc03af2c61545fdea4bb78d = $(`<div id="html_81b2a3cacbc03af2c61545fdea4bb78d" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 2<br>Node ID: 817<br>Dirección: AV. PEDRO DE VALDIVIA 2288</div>`)[0];
+                popup_0a262f6e03528295dc896d078780a6c6.setContent(html_81b2a3cacbc03af2c61545fdea4bb78d);
+            
+        
+
+        circle_marker_1d1d53f9bcf2fca9a9529491cf8bae1f.bindPopup(popup_0a262f6e03528295dc896d078780a6c6)
+        ;
+
+        
+    
+    
+            var circle_marker_695c1f1c8e7a78774ecb4f07e5033c63 = L.circleMarker(
+                [-33.446682, -70.605953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_538ddfcf96a447fd2ab8522460d70ca4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3becab368042b2f5de087c2cf5131177 = $(`<div id="html_3becab368042b2f5de087c2cf5131177" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 3<br>Node ID: 853<br>Dirección: AV. PEDRO DE VALDIVIA 9814</div>`)[0];
+                popup_538ddfcf96a447fd2ab8522460d70ca4.setContent(html_3becab368042b2f5de087c2cf5131177);
+            
+        
+
+        circle_marker_695c1f1c8e7a78774ecb4f07e5033c63.bindPopup(popup_538ddfcf96a447fd2ab8522460d70ca4)
+        ;
+
+        
+    
+    
+            var circle_marker_c9ac9cf3997b374a6131e3ee96e82b20 = L.circleMarker(
+                [-33.4477465, -70.6135514],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_28f6e333ca275b923fcfd7d8a93ea271 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93eb99d02ba59af3a4d5c6219cada61e = $(`<div id="html_93eb99d02ba59af3a4d5c6219cada61e" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 4<br>Node ID: 1300<br>Dirección: AVENIDA MANUEL MONTT 2218</div>`)[0];
+                popup_28f6e333ca275b923fcfd7d8a93ea271.setContent(html_93eb99d02ba59af3a4d5c6219cada61e);
+            
+        
+
+        circle_marker_c9ac9cf3997b374a6131e3ee96e82b20.bindPopup(popup_28f6e333ca275b923fcfd7d8a93ea271)
+        ;
+
+        
+    
+    
+            var circle_marker_7448df882641425d44239438311f6a93 = L.circleMarker(
+                [-33.45211752135792, -70.62996532946244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_14ee609b3cdfcff5f410176fe9105e8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c70e9a98ab561f3fb1f573432a16f1d2 = $(`<div id="html_c70e9a98ab561f3fb1f573432a16f1d2" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 5<br>Node ID: 302<br>Dirección: AV. IRARRÁZAVAL 8302</div>`)[0];
+                popup_14ee609b3cdfcff5f410176fe9105e8f.setContent(html_c70e9a98ab561f3fb1f573432a16f1d2);
+            
+        
+
+        circle_marker_7448df882641425d44239438311f6a93.bindPopup(popup_14ee609b3cdfcff5f410176fe9105e8f)
+        ;
+
+        
+    
+    
+            var circle_marker_e7cb8ed9bb990fb809e3e89f089df4ea = L.circleMarker(
+                [-33.46049613448276, -70.6220507],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_e6049e863d5e5e9cbfd0ea820bcef05b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_179dd68b7aa2fade15745a5c6ad9fd43 = $(`<div id="html_179dd68b7aa2fade15745a5c6ad9fd43" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 6<br>Node ID: 194<br>Dirección: AV. GRECIA 943</div>`)[0];
+                popup_e6049e863d5e5e9cbfd0ea820bcef05b.setContent(html_179dd68b7aa2fade15745a5c6ad9fd43);
+            
+        
+
+        circle_marker_e7cb8ed9bb990fb809e3e89f089df4ea.bindPopup(popup_e6049e863d5e5e9cbfd0ea820bcef05b)
+        ;
+
+        
+    
+    
+            var circle_marker_3e692dbb8f71360d37e96cd0a40b25bb = L.circleMarker(
+                [-33.48838930377358, -70.59933205849057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_7d33b5474f6cd1bc6d88460995edf798 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e877f2c23ef23b36fc43cf89327e8e3f = $(`<div id="html_e877f2c23ef23b36fc43cf89327e8e3f" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 7<br>Node ID: 553<br>Dirección: AV. MACUL 3744</div>`)[0];
+                popup_7d33b5474f6cd1bc6d88460995edf798.setContent(html_e877f2c23ef23b36fc43cf89327e8e3f);
+            
+        
+
+        circle_marker_3e692dbb8f71360d37e96cd0a40b25bb.bindPopup(popup_7d33b5474f6cd1bc6d88460995edf798)
+        ;
+
+        
+    
+    
+            var circle_marker_4a6500c4252002a33bc5ea2b67e79022 = L.circleMarker(
+                [-33.49707804581206, -70.59790889427815],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_85af20c25dcc4320b3da2c68adb5fdbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87a31fe0b73b231493a735dda623faa0 = $(`<div id="html_87a31fe0b73b231493a735dda623faa0" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 8<br>Node ID: 539<br>Dirección: AV. MACUL 1638</div>`)[0];
+                popup_85af20c25dcc4320b3da2c68adb5fdbf.setContent(html_87a31fe0b73b231493a735dda623faa0);
+            
+        
+
+        circle_marker_4a6500c4252002a33bc5ea2b67e79022.bindPopup(popup_85af20c25dcc4320b3da2c68adb5fdbf)
+        ;
+
+        
+    
+    
+            var circle_marker_e27842fc7cd7a18809124d98ebc312a7 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4aca617f4cbf275bb63e2befcb532138);
+        
+    
+        var popup_a01b6f9418c8dcb50166ed2265a9d76d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a776e98d57f9e2bcd5669b8ba97f0305 = $(`<div id="html_a776e98d57f9e2bcd5669b8ba97f0305" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: AM<br>Cluster: 7<br>Ruta: 2<br>Orden: 9<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_a01b6f9418c8dcb50166ed2265a9d76d.setContent(html_a776e98d57f9e2bcd5669b8ba97f0305);
+            
+        
+
+        circle_marker_e27842fc7cd7a18809124d98ebc312a7.bindPopup(popup_a01b6f9418c8dcb50166ed2265a9d76d)
+        ;
+
+        
+    
+    
+            circle_marker_e27842fc7cd7a18809124d98ebc312a7.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_bfd4e4748c744609e4319790ae070862 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_e5384ae6e26102445e6a7982996843bd = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.432762, -70.686501], [-33.432762, -70.686501], [-33.46971150355578, -70.64855318455172], [-33.47343156666667, -70.6465084], [-33.488534485686856, -70.65048076207464], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+            poly_line_e5384ae6e26102445e6a7982996843bd.bindTooltip(
+                `<div>
+                     PM | Cluster 3 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f3d7ca258acc8b77c490552bf832934 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_fcbfc187260a372fb31017ec95b04bb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc669564a0d3e789d5e04a566f2bd9f8 = $(`<div id="html_bc669564a0d3e789d5e04a566f2bd9f8" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_fcbfc187260a372fb31017ec95b04bb4.setContent(html_bc669564a0d3e789d5e04a566f2bd9f8);
+            
+        
+
+        circle_marker_5f3d7ca258acc8b77c490552bf832934.bindPopup(popup_fcbfc187260a372fb31017ec95b04bb4)
+        ;
+
+        
+    
+    
+            circle_marker_5f3d7ca258acc8b77c490552bf832934.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94280fca473da91650b869af3b7957a7 = L.circleMarker(
+                [-33.432762, -70.686501],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_d9d75cff196e19a9b9ceafa4a696892c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cd13961e3b6300261a8d7f0d71d5bca = $(`<div id="html_3cd13961e3b6300261a8d7f0d71d5bca" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 1<br>Node ID: 655<br>Dirección: AV. MAPOCHO 4726</div>`)[0];
+                popup_d9d75cff196e19a9b9ceafa4a696892c.setContent(html_3cd13961e3b6300261a8d7f0d71d5bca);
+            
+        
+
+        circle_marker_94280fca473da91650b869af3b7957a7.bindPopup(popup_d9d75cff196e19a9b9ceafa4a696892c)
+        ;
+
+        
+    
+    
+            var circle_marker_efe89a0dcbbfb414cfced6e6f79fc622 = L.circleMarker(
+                [-33.432762, -70.686501],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_d37e744cb5ef826757220dea98922c4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78eaf9dd1c73c0b01a6b40ce5fbbc0bf = $(`<div id="html_78eaf9dd1c73c0b01a6b40ce5fbbc0bf" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 2<br>Node ID: 687<br>Dirección: AV. MAPOCHO 9761</div>`)[0];
+                popup_d37e744cb5ef826757220dea98922c4e.setContent(html_78eaf9dd1c73c0b01a6b40ce5fbbc0bf);
+            
+        
+
+        circle_marker_efe89a0dcbbfb414cfced6e6f79fc622.bindPopup(popup_d37e744cb5ef826757220dea98922c4e)
+        ;
+
+        
+    
+    
+            var circle_marker_a006a612e676e23a8abfae6a62662cfa = L.circleMarker(
+                [-33.46971150355578, -70.64855318455172],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_d82d78a23880fa9063027b36740c34b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aace992546a3ed94d645af9045817012 = $(`<div id="html_aace992546a3ed94d645af9045817012" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 3<br>Node ID: 2028<br>Dirección: CALLE SAN DIEGO 2452</div>`)[0];
+                popup_d82d78a23880fa9063027b36740c34b0.setContent(html_aace992546a3ed94d645af9045817012);
+            
+        
+
+        circle_marker_a006a612e676e23a8abfae6a62662cfa.bindPopup(popup_d82d78a23880fa9063027b36740c34b0)
+        ;
+
+        
+    
+    
+            var circle_marker_b3ecd7fc28c90163ee395a74ef8f86fe = L.circleMarker(
+                [-33.47343156666667, -70.6465084],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_f937b2a1817ad941091ea32ecdd6c544 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2ef55a6f48c46630a7948ed3812fa30 = $(`<div id="html_f2ef55a6f48c46630a7948ed3812fa30" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 4<br>Node ID: 1486<br>Dirección: CALLE ARTURO PRAT 2118</div>`)[0];
+                popup_f937b2a1817ad941091ea32ecdd6c544.setContent(html_f2ef55a6f48c46630a7948ed3812fa30);
+            
+        
+
+        circle_marker_b3ecd7fc28c90163ee395a74ef8f86fe.bindPopup(popup_f937b2a1817ad941091ea32ecdd6c544)
+        ;
+
+        
+    
+    
+            var circle_marker_57ff9dcd70fc6e3bd745268b096bc638 = L.circleMarker(
+                [-33.488534485686856, -70.65048076207464],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_570bc90ff17a0c305d5d694134ce129f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6926911aab284b76938a6ebed1c3ed9 = $(`<div id="html_f6926911aab284b76938a6ebed1c3ed9" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 5<br>Node ID: 2226<br>Dirección: GRAN AVENIDA JOSÉ MIGUEL CARRERA 3758</div>`)[0];
+                popup_570bc90ff17a0c305d5d694134ce129f.setContent(html_f6926911aab284b76938a6ebed1c3ed9);
+            
+        
+
+        circle_marker_57ff9dcd70fc6e3bd745268b096bc638.bindPopup(popup_570bc90ff17a0c305d5d694134ce129f)
+        ;
+
+        
+    
+    
+            var circle_marker_4a6f09a98234d13e015a06b4d34fda6f = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bfd4e4748c744609e4319790ae070862);
+        
+    
+        var popup_bbc6bfaf7adb429d17d329c1a70f6acc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7723bc51e39aa5e65610300d6031dc07 = $(`<div id="html_7723bc51e39aa5e65610300d6031dc07" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 1<br>Orden: 6<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_bbc6bfaf7adb429d17d329c1a70f6acc.setContent(html_7723bc51e39aa5e65610300d6031dc07);
+            
+        
+
+        circle_marker_4a6f09a98234d13e015a06b4d34fda6f.bindPopup(popup_bbc6bfaf7adb429d17d329c1a70f6acc)
+        ;
+
+        
+    
+    
+            circle_marker_4a6f09a98234d13e015a06b4d34fda6f.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_61af1ba6c6ca9681e69f91c8582c0ce4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_9ab6ae71509dfee8d6d9950970730904 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.46971150355578, -70.64855318455172], [-33.476502, -70.648199], [-33.48206960714286, -70.64634102857143], [-33.49783141879195, -70.6712537308725], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+            poly_line_9ab6ae71509dfee8d6d9950970730904.bindTooltip(
+                `<div>
+                     PM | Cluster 3 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5fd820c626fe1de1ed33184e3d81318a = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+        var popup_4af28f2e3e709e4cd17c9e7f855197f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d62f2f4f1bc7a3e00bd3c7dc3461539 = $(`<div id="html_5d62f2f4f1bc7a3e00bd3c7dc3461539" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_4af28f2e3e709e4cd17c9e7f855197f8.setContent(html_5d62f2f4f1bc7a3e00bd3c7dc3461539);
+            
+        
+
+        circle_marker_5fd820c626fe1de1ed33184e3d81318a.bindPopup(popup_4af28f2e3e709e4cd17c9e7f855197f8)
+        ;
+
+        
+    
+    
+            circle_marker_5fd820c626fe1de1ed33184e3d81318a.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd872b640bdc98aa0767aaa6f881beb6 = L.circleMarker(
+                [-33.46971150355578, -70.64855318455172],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+        var popup_c63ef945b39f2dbc85c1c146c71bfbab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bb437220b40f64576a608ee272ff24f = $(`<div id="html_5bb437220b40f64576a608ee272ff24f" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 2<br>Orden: 1<br>Node ID: 2051<br>Dirección: CALLE SAN DIEGO 5960</div>`)[0];
+                popup_c63ef945b39f2dbc85c1c146c71bfbab.setContent(html_5bb437220b40f64576a608ee272ff24f);
+            
+        
+
+        circle_marker_dd872b640bdc98aa0767aaa6f881beb6.bindPopup(popup_c63ef945b39f2dbc85c1c146c71bfbab)
+        ;
+
+        
+    
+    
+            var circle_marker_c55f499d28261ac8b8b49f6dc90ace93 = L.circleMarker(
+                [-33.476502, -70.648199],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+        var popup_6d61a536ab1aac29aa489c93234ae81a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9aee7e518ef640820dc8292b2664d54 = $(`<div id="html_c9aee7e518ef640820dc8292b2664d54" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 2<br>Orden: 2<br>Node ID: 2218<br>Dirección: GRAN AVENIDA JOSÉ MIGUEL CARRERA 2391</div>`)[0];
+                popup_6d61a536ab1aac29aa489c93234ae81a.setContent(html_c9aee7e518ef640820dc8292b2664d54);
+            
+        
+
+        circle_marker_c55f499d28261ac8b8b49f6dc90ace93.bindPopup(popup_6d61a536ab1aac29aa489c93234ae81a)
+        ;
+
+        
+    
+    
+            var circle_marker_daae259dceaad749e80d4a97d00afed1 = L.circleMarker(
+                [-33.48206960714286, -70.64634102857143],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+        var popup_5b862e6e75837f8adcc92651c8d79ea6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8294c1dee27ca6639c436591bfe8d7ec = $(`<div id="html_8294c1dee27ca6639c436591bfe8d7ec" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 2<br>Orden: 3<br>Node ID: 1495<br>Dirección: CALLE ARTURO PRAT 2957</div>`)[0];
+                popup_5b862e6e75837f8adcc92651c8d79ea6.setContent(html_8294c1dee27ca6639c436591bfe8d7ec);
+            
+        
+
+        circle_marker_daae259dceaad749e80d4a97d00afed1.bindPopup(popup_5b862e6e75837f8adcc92651c8d79ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_ee163f2a3e587ff0544873b0784ca7cb = L.circleMarker(
+                [-33.49783141879195, -70.6712537308725],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+        var popup_2f0985814d998f5628c72e845b5133da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2eca50a08ba58877aecb56b1c0371fba = $(`<div id="html_2eca50a08ba58877aecb56b1c0371fba" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 2<br>Orden: 4<br>Node ID: 110<br>Dirección: AV. DEPARTAMENTAL 2215</div>`)[0];
+                popup_2f0985814d998f5628c72e845b5133da.setContent(html_2eca50a08ba58877aecb56b1c0371fba);
+            
+        
+
+        circle_marker_ee163f2a3e587ff0544873b0784ca7cb.bindPopup(popup_2f0985814d998f5628c72e845b5133da)
+        ;
+
+        
+    
+    
+            var circle_marker_f02cb106de10c359792e814b9e65dcad = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_61af1ba6c6ca9681e69f91c8582c0ce4);
+        
+    
+        var popup_1b76258d379269ec42e68fc14745e4f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a193e43b789e28d2a82bdd50bb70a154 = $(`<div id="html_a193e43b789e28d2a82bdd50bb70a154" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 3<br>Ruta: 2<br>Orden: 5<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_1b76258d379269ec42e68fc14745e4f6.setContent(html_a193e43b789e28d2a82bdd50bb70a154);
+            
+        
+
+        circle_marker_f02cb106de10c359792e814b9e65dcad.bindPopup(popup_1b76258d379269ec42e68fc14745e4f6)
+        ;
+
+        
+    
+    
+            circle_marker_f02cb106de10c359792e814b9e65dcad.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_2d47ecbfbfe3c47f71a2f2d9844da256 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_cf4cadbe9be0a627607dfb6049b79089 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.44046393300847, -70.65220603930719], [-33.43969907361054, -70.65168277752262], [-33.43969907361054, -70.65168277752262], [-33.43969907361054, -70.65168277752262], [-33.4375649, -70.6532977], [-33.43452185756808, -70.65443829443069], [-33.43452185756808, -70.65443829443069], [-33.43452185756808, -70.65443829443069], [-33.43452185756808, -70.65443829443069], [-33.430113, -70.653323], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+            poly_line_cf4cadbe9be0a627607dfb6049b79089.bindTooltip(
+                `<div>
+                     PM | Cluster 5 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ccbe9ead139c4b342578004fbfbfbf2b = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_76d54b9c0c46302f261624e2587e7a5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f34e7585f57600d89c6d3effb39f3985 = $(`<div id="html_f34e7585f57600d89c6d3effb39f3985" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_76d54b9c0c46302f261624e2587e7a5a.setContent(html_f34e7585f57600d89c6d3effb39f3985);
+            
+        
+
+        circle_marker_ccbe9ead139c4b342578004fbfbfbf2b.bindPopup(popup_76d54b9c0c46302f261624e2587e7a5a)
+        ;
+
+        
+    
+    
+            circle_marker_ccbe9ead139c4b342578004fbfbfbf2b.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bb5ef6fdbb3a549fe296cf3cfe6687a = L.circleMarker(
+                [-33.44046393300847, -70.65220603930719],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_4c8eefe52ba2556846944e0c71bfcee8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d037a712db023c4d64d5739f9d3f8722 = $(`<div id="html_d037a712db023c4d64d5739f9d3f8722" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 1<br>Node ID: 1582<br>Dirección: CALLE BANDERA 8937</div>`)[0];
+                popup_4c8eefe52ba2556846944e0c71bfcee8.setContent(html_d037a712db023c4d64d5739f9d3f8722);
+            
+        
+
+        circle_marker_5bb5ef6fdbb3a549fe296cf3cfe6687a.bindPopup(popup_4c8eefe52ba2556846944e0c71bfcee8)
+        ;
+
+        
+    
+    
+            var circle_marker_bce7662a9b8d7f03a06166c74d3a0a3a = L.circleMarker(
+                [-33.43969907361054, -70.65168277752262],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_0feaa261f1b2847ce16e77bd03068c29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d152f0e7d73507174bc48cd2176678a3 = $(`<div id="html_d152f0e7d73507174bc48cd2176678a3" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 2<br>Node ID: 1789<br>Dirección: CALLE HUÉRFANOS 6157</div>`)[0];
+                popup_0feaa261f1b2847ce16e77bd03068c29.setContent(html_d152f0e7d73507174bc48cd2176678a3);
+            
+        
+
+        circle_marker_bce7662a9b8d7f03a06166c74d3a0a3a.bindPopup(popup_0feaa261f1b2847ce16e77bd03068c29)
+        ;
+
+        
+    
+    
+            var circle_marker_34bf8a4cfbd9f7316b6b6ffcda2a037a = L.circleMarker(
+                [-33.43969907361054, -70.65168277752262],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_0e2d61e26b61c2a18813d03b60f53b65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c46ae41ea92ff37d173003f9d9e305d = $(`<div id="html_7c46ae41ea92ff37d173003f9d9e305d" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 3<br>Node ID: 1783<br>Dirección: CALLE HUÉRFANOS 5159</div>`)[0];
+                popup_0e2d61e26b61c2a18813d03b60f53b65.setContent(html_7c46ae41ea92ff37d173003f9d9e305d);
+            
+        
+
+        circle_marker_34bf8a4cfbd9f7316b6b6ffcda2a037a.bindPopup(popup_0e2d61e26b61c2a18813d03b60f53b65)
+        ;
+
+        
+    
+    
+            var circle_marker_88c75f8aff619471f8a59c0accc60d1a = L.circleMarker(
+                [-33.43969907361054, -70.65168277752262],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_a025687705bf01eaa8565904ec6b019c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1bc29289ce5383654c28d517bf00d0d = $(`<div id="html_e1bc29289ce5383654c28d517bf00d0d" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 4<br>Node ID: 1767<br>Dirección: CALLE HUÉRFANOS 3553</div>`)[0];
+                popup_a025687705bf01eaa8565904ec6b019c.setContent(html_e1bc29289ce5383654c28d517bf00d0d);
+            
+        
+
+        circle_marker_88c75f8aff619471f8a59c0accc60d1a.bindPopup(popup_a025687705bf01eaa8565904ec6b019c)
+        ;
+
+        
+    
+    
+            var circle_marker_0bde46abf33504a6b12dd280ba122e34 = L.circleMarker(
+                [-33.4375649, -70.6532977],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_5ec793875251b644782d53100c79811c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_248c6ee4bdcd89d79da15e60bff133fd = $(`<div id="html_248c6ee4bdcd89d79da15e60bff133fd" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 5<br>Node ID: 1627<br>Dirección: CALLE CATEDRAL 808</div>`)[0];
+                popup_5ec793875251b644782d53100c79811c.setContent(html_248c6ee4bdcd89d79da15e60bff133fd);
+            
+        
+
+        circle_marker_0bde46abf33504a6b12dd280ba122e34.bindPopup(popup_5ec793875251b644782d53100c79811c)
+        ;
+
+        
+    
+    
+            var circle_marker_e2a67358a56c5f042a0ff9f88884079d = L.circleMarker(
+                [-33.43452185756808, -70.65443829443069],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_b9297cfd477830fece11e8e3329fe755 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d94d4502f78a77102d4728511b291a2 = $(`<div id="html_4d94d4502f78a77102d4728511b291a2" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 6<br>Node ID: 1951<br>Dirección: CALLE MORANDÉ 8912</div>`)[0];
+                popup_b9297cfd477830fece11e8e3329fe755.setContent(html_4d94d4502f78a77102d4728511b291a2);
+            
+        
+
+        circle_marker_e2a67358a56c5f042a0ff9f88884079d.bindPopup(popup_b9297cfd477830fece11e8e3329fe755)
+        ;
+
+        
+    
+    
+            var circle_marker_eb0e33b3f4da4ae236507ee6658255b1 = L.circleMarker(
+                [-33.43452185756808, -70.65443829443069],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_d7633209c04cfaa713a3a5a4fe9b0996 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42c53be17a69a5a6b8742fcff6254968 = $(`<div id="html_42c53be17a69a5a6b8742fcff6254968" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 7<br>Node ID: 1940<br>Dirección: CALLE MORANDÉ 6785</div>`)[0];
+                popup_d7633209c04cfaa713a3a5a4fe9b0996.setContent(html_42c53be17a69a5a6b8742fcff6254968);
+            
+        
+
+        circle_marker_eb0e33b3f4da4ae236507ee6658255b1.bindPopup(popup_d7633209c04cfaa713a3a5a4fe9b0996)
+        ;
+
+        
+    
+    
+            var circle_marker_022e5c9443b0c034cab3b043c25594c7 = L.circleMarker(
+                [-33.43452185756808, -70.65443829443069],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_967fd8a67bdfcbef5cfe573cfb97cebb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7adadb0e6ba9d3a1c90df496ee1d3d59 = $(`<div id="html_7adadb0e6ba9d3a1c90df496ee1d3d59" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 8<br>Node ID: 1934<br>Dirección: CALLE MORANDÉ 5988</div>`)[0];
+                popup_967fd8a67bdfcbef5cfe573cfb97cebb.setContent(html_7adadb0e6ba9d3a1c90df496ee1d3d59);
+            
+        
+
+        circle_marker_022e5c9443b0c034cab3b043c25594c7.bindPopup(popup_967fd8a67bdfcbef5cfe573cfb97cebb)
+        ;
+
+        
+    
+    
+            var circle_marker_be40b8c570186466ab3b3f4d506e0a8e = L.circleMarker(
+                [-33.43452185756808, -70.65443829443069],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_9e1569988ded2d3c004c09bf66b35e86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c5af9c732f94ac59f249708614d80b1 = $(`<div id="html_9c5af9c732f94ac59f249708614d80b1" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 9<br>Node ID: 1910<br>Dirección: CALLE MORANDÉ 1676</div>`)[0];
+                popup_9e1569988ded2d3c004c09bf66b35e86.setContent(html_9c5af9c732f94ac59f249708614d80b1);
+            
+        
+
+        circle_marker_be40b8c570186466ab3b3f4d506e0a8e.bindPopup(popup_9e1569988ded2d3c004c09bf66b35e86)
+        ;
+
+        
+    
+    
+            var circle_marker_98044e5913270adc7e65ea3aba20d9bc = L.circleMarker(
+                [-33.430113, -70.653323],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_fffa9474fdb61269b7943b2c24515659 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9190cae98748aea59b9ba45c2925904 = $(`<div id="html_b9190cae98748aea59b9ba45c2925904" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 10<br>Node ID: 246<br>Dirección: AV. INDEPENDENCIA 9113</div>`)[0];
+                popup_fffa9474fdb61269b7943b2c24515659.setContent(html_b9190cae98748aea59b9ba45c2925904);
+            
+        
+
+        circle_marker_98044e5913270adc7e65ea3aba20d9bc.bindPopup(popup_fffa9474fdb61269b7943b2c24515659)
+        ;
+
+        
+    
+    
+            var circle_marker_b9d5f63c1d48026e2c8ebb399b886647 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d47ecbfbfe3c47f71a2f2d9844da256);
+        
+    
+        var popup_68d2b8f7087f395d1b3f54d47a498ecc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19d0bf0ab359a87fb25dee795d564165 = $(`<div id="html_19d0bf0ab359a87fb25dee795d564165" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 1<br>Orden: 11<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_68d2b8f7087f395d1b3f54d47a498ecc.setContent(html_19d0bf0ab359a87fb25dee795d564165);
+            
+        
+
+        circle_marker_b9d5f63c1d48026e2c8ebb399b886647.bindPopup(popup_68d2b8f7087f395d1b3f54d47a498ecc)
+        ;
+
+        
+    
+    
+            circle_marker_b9d5f63c1d48026e2c8ebb399b886647.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_f0a2181cc389d2a2eab5d38d20c9394d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_60b1002866e35a1242167b822037a601 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.430113, -70.653323], [-33.43487534738776, -70.64887247008978], [-33.43487534738776, -70.64887247008978], [-33.43487534738776, -70.64887247008978], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+            poly_line_60b1002866e35a1242167b822037a601.bindTooltip(
+                `<div>
+                     PM | Cluster 5 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4e28a6cb927fbfa8a5172aeb54ddfb1 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+        var popup_d7403fc37bf75935dc11e779362ee4ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5e08509999fc6deee4ed99c01e270f5 = $(`<div id="html_d5e08509999fc6deee4ed99c01e270f5" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_d7403fc37bf75935dc11e779362ee4ec.setContent(html_d5e08509999fc6deee4ed99c01e270f5);
+            
+        
+
+        circle_marker_f4e28a6cb927fbfa8a5172aeb54ddfb1.bindPopup(popup_d7403fc37bf75935dc11e779362ee4ec)
+        ;
+
+        
+    
+    
+            circle_marker_f4e28a6cb927fbfa8a5172aeb54ddfb1.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63e4d8e1688f5e5732c775948ea06326 = L.circleMarker(
+                [-33.430113, -70.653323],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+        var popup_5633e9988f84733199ed64db9cb0fe04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5c7ca248c9fbf6cf24d35cde1a08c55 = $(`<div id="html_a5c7ca248c9fbf6cf24d35cde1a08c55" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 2<br>Orden: 1<br>Node ID: 225<br>Dirección: AV. INDEPENDENCIA 6485</div>`)[0];
+                popup_5633e9988f84733199ed64db9cb0fe04.setContent(html_a5c7ca248c9fbf6cf24d35cde1a08c55);
+            
+        
+
+        circle_marker_63e4d8e1688f5e5732c775948ea06326.bindPopup(popup_5633e9988f84733199ed64db9cb0fe04)
+        ;
+
+        
+    
+    
+            var circle_marker_411403f9ed325607ef366f97ffd1ad6d = L.circleMarker(
+                [-33.43487534738776, -70.64887247008978],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+        var popup_e0748371352299131fb38c047337d145 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e4335b379dd0b8d1114166f7d4e3786 = $(`<div id="html_5e4335b379dd0b8d1114166f7d4e3786" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 2<br>Orden: 2<br>Node ID: 1963<br>Dirección: CALLE SAN ANTONIO 1641</div>`)[0];
+                popup_e0748371352299131fb38c047337d145.setContent(html_5e4335b379dd0b8d1114166f7d4e3786);
+            
+        
+
+        circle_marker_411403f9ed325607ef366f97ffd1ad6d.bindPopup(popup_e0748371352299131fb38c047337d145)
+        ;
+
+        
+    
+    
+            var circle_marker_62800566a0d90e7abaef5b8adca77dfa = L.circleMarker(
+                [-33.43487534738776, -70.64887247008978],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+        var popup_38181b288cb580641ee1ed2055f9ce21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b04b052498de7b08113d61d0fe07764 = $(`<div id="html_3b04b052498de7b08113d61d0fe07764" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 2<br>Orden: 3<br>Node ID: 1973<br>Dirección: CALLE SAN ANTONIO 3448</div>`)[0];
+                popup_38181b288cb580641ee1ed2055f9ce21.setContent(html_3b04b052498de7b08113d61d0fe07764);
+            
+        
+
+        circle_marker_62800566a0d90e7abaef5b8adca77dfa.bindPopup(popup_38181b288cb580641ee1ed2055f9ce21)
+        ;
+
+        
+    
+    
+            var circle_marker_6ddc921a5674cbee9f4753dd5e164d36 = L.circleMarker(
+                [-33.43487534738776, -70.64887247008978],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+        var popup_a1c7a7d57107c44f9627484b47b7cd40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb36438d94fb8930aa969ef4f72dc593 = $(`<div id="html_bb36438d94fb8930aa969ef4f72dc593" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 2<br>Orden: 4<br>Node ID: 1985<br>Dirección: CALLE SAN ANTONIO 4837</div>`)[0];
+                popup_a1c7a7d57107c44f9627484b47b7cd40.setContent(html_bb36438d94fb8930aa969ef4f72dc593);
+            
+        
+
+        circle_marker_6ddc921a5674cbee9f4753dd5e164d36.bindPopup(popup_a1c7a7d57107c44f9627484b47b7cd40)
+        ;
+
+        
+    
+    
+            var circle_marker_933c5312718fae854e5ed9fa3b2de925 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f0a2181cc389d2a2eab5d38d20c9394d);
+        
+    
+        var popup_f262c1690b89a7084036c53c44b04517 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52fc92d90cc6910b185351d1ae934b19 = $(`<div id="html_52fc92d90cc6910b185351d1ae934b19" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 5<br>Ruta: 2<br>Orden: 5<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_f262c1690b89a7084036c53c44b04517.setContent(html_52fc92d90cc6910b185351d1ae934b19);
+            
+        
+
+        circle_marker_933c5312718fae854e5ed9fa3b2de925.bindPopup(popup_f262c1690b89a7084036c53c44b04517)
+        ;
+
+        
+    
+    
+            circle_marker_933c5312718fae854e5ed9fa3b2de925.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_0590e8f76a3b2a4648ed5d09a9fb883f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_a320395d2d01614b5056f63667b639c9 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.44378662227161, -70.65086273448715], [-33.43949515564987, -70.64953513821996], [-33.43949515564987, -70.64953513821996], [-33.439233868, -70.64832024200001], [-33.437700910204086, -70.64860850816326], [-33.43487534738776, -70.64887247008978], [-33.43731790255185, -70.64174538474282], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+            poly_line_a320395d2d01614b5056f63667b639c9.bindTooltip(
+                `<div>
+                     PM | Cluster 6 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb3bf65207b6836b0065b7a9615ed752 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_3b0c9488d56574d5140c8afef66c6867 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60efc2dbd5508e5938470fb4c8922619 = $(`<div id="html_60efc2dbd5508e5938470fb4c8922619" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_3b0c9488d56574d5140c8afef66c6867.setContent(html_60efc2dbd5508e5938470fb4c8922619);
+            
+        
+
+        circle_marker_bb3bf65207b6836b0065b7a9615ed752.bindPopup(popup_3b0c9488d56574d5140c8afef66c6867)
+        ;
+
+        
+    
+    
+            circle_marker_bb3bf65207b6836b0065b7a9615ed752.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3697c925fdd9c541916b6669eafee0d7 = L.circleMarker(
+                [-33.44378662227161, -70.65086273448715],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_fff2afff53735f4fe5d4b0fe73e9fda7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d87448ad40517cd2af37c17ac145f145 = $(`<div id="html_d87448ad40517cd2af37c17ac145f145" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 1<br>Node ID: 522<br>Dirección: AV. LIBERTADOR BERNARDO O HIGGINS 5819</div>`)[0];
+                popup_fff2afff53735f4fe5d4b0fe73e9fda7.setContent(html_d87448ad40517cd2af37c17ac145f145);
+            
+        
+
+        circle_marker_3697c925fdd9c541916b6669eafee0d7.bindPopup(popup_fff2afff53735f4fe5d4b0fe73e9fda7)
+        ;
+
+        
+    
+    
+            var circle_marker_6dc6b98ffaf20905f1fe9fe2d6cb12ad = L.circleMarker(
+                [-33.43949515564987, -70.64953513821996],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_46a60757528bd1ad133c801ff935cc57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66a283b9cd9027871dc104d384e4089e = $(`<div id="html_66a283b9cd9027871dc104d384e4089e" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 2<br>Node ID: 1693<br>Dirección: CALLE ESTADO 1659</div>`)[0];
+                popup_46a60757528bd1ad133c801ff935cc57.setContent(html_66a283b9cd9027871dc104d384e4089e);
+            
+        
+
+        circle_marker_6dc6b98ffaf20905f1fe9fe2d6cb12ad.bindPopup(popup_46a60757528bd1ad133c801ff935cc57)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d655906c37b160747cfc43e5c7488f = L.circleMarker(
+                [-33.43949515564987, -70.64953513821996],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_4b8937fc9811b22cdc306cd9b76b0083 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a928336d005b0ca5474c249ce6fa655 = $(`<div id="html_6a928336d005b0ca5474c249ce6fa655" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 3<br>Node ID: 1691<br>Dirección: CALLE ESTADO 1275</div>`)[0];
+                popup_4b8937fc9811b22cdc306cd9b76b0083.setContent(html_6a928336d005b0ca5474c249ce6fa655);
+            
+        
+
+        circle_marker_d9d655906c37b160747cfc43e5c7488f.bindPopup(popup_4b8937fc9811b22cdc306cd9b76b0083)
+        ;
+
+        
+    
+    
+            var circle_marker_05fe4aa8d206c92a537b690e2e924fcf = L.circleMarker(
+                [-33.439233868, -70.64832024200001],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_11f9fe9757393fb3c5ec42ad2c70c9c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a76ee28338efecb21d99da1991cb8312 = $(`<div id="html_a76ee28338efecb21d99da1991cb8312" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 4<br>Node ID: 1971<br>Dirección: CALLE SAN ANTONIO 302</div>`)[0];
+                popup_11f9fe9757393fb3c5ec42ad2c70c9c1.setContent(html_a76ee28338efecb21d99da1991cb8312);
+            
+        
+
+        circle_marker_05fe4aa8d206c92a537b690e2e924fcf.bindPopup(popup_11f9fe9757393fb3c5ec42ad2c70c9c1)
+        ;
+
+        
+    
+    
+            var circle_marker_ed65d3019d81670a43de19c7afebbed1 = L.circleMarker(
+                [-33.437700910204086, -70.64860850816326],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_f5f2d69fc8478fc09517d5ce2901600f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0f172dc56cb6058d70ad769a6f53991 = $(`<div id="html_d0f172dc56cb6058d70ad769a6f53991" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 5<br>Node ID: 1981<br>Dirección: CALLE SAN ANTONIO 448</div>`)[0];
+                popup_f5f2d69fc8478fc09517d5ce2901600f.setContent(html_d0f172dc56cb6058d70ad769a6f53991);
+            
+        
+
+        circle_marker_ed65d3019d81670a43de19c7afebbed1.bindPopup(popup_f5f2d69fc8478fc09517d5ce2901600f)
+        ;
+
+        
+    
+    
+            var circle_marker_2add494a4c0189379e6860348e5ac231 = L.circleMarker(
+                [-33.43487534738776, -70.64887247008978],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_f51ff6a210cb0b3813d68b4b62af5317 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00708ff6a5711d3a5aa6f6be97915685 = $(`<div id="html_00708ff6a5711d3a5aa6f6be97915685" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 6<br>Node ID: 2000<br>Dirección: CALLE SAN ANTONIO 8089</div>`)[0];
+                popup_f51ff6a210cb0b3813d68b4b62af5317.setContent(html_00708ff6a5711d3a5aa6f6be97915685);
+            
+        
+
+        circle_marker_2add494a4c0189379e6860348e5ac231.bindPopup(popup_f51ff6a210cb0b3813d68b4b62af5317)
+        ;
+
+        
+    
+    
+            var circle_marker_7a30cd801fbc71ab26985f7f5f348e36 = L.circleMarker(
+                [-33.43731790255185, -70.64174538474282],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_9dc4b630674a464050a00c518e925f3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e8763ca92cf2b8271053a8acffa3539 = $(`<div id="html_8e8763ca92cf2b8271053a8acffa3539" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 7<br>Node ID: 1850<br>Dirección: CALLE MERCED 9195</div>`)[0];
+                popup_9dc4b630674a464050a00c518e925f3e.setContent(html_8e8763ca92cf2b8271053a8acffa3539);
+            
+        
+
+        circle_marker_7a30cd801fbc71ab26985f7f5f348e36.bindPopup(popup_9dc4b630674a464050a00c518e925f3e)
+        ;
+
+        
+    
+    
+            var circle_marker_a7d7a5b3294203bb0c03039ca7f06de1 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0590e8f76a3b2a4648ed5d09a9fb883f);
+        
+    
+        var popup_cf6b220edc109b1b528ceb1f4ac54452 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0fe02ece482d81403ec93baa16b1f9c = $(`<div id="html_d0fe02ece482d81403ec93baa16b1f9c" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 1<br>Orden: 8<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_cf6b220edc109b1b528ceb1f4ac54452.setContent(html_d0fe02ece482d81403ec93baa16b1f9c);
+            
+        
+
+        circle_marker_a7d7a5b3294203bb0c03039ca7f06de1.bindPopup(popup_cf6b220edc109b1b528ceb1f4ac54452)
+        ;
+
+        
+    
+    
+            circle_marker_a7d7a5b3294203bb0c03039ca7f06de1.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_4dc6040bcfb5de832f4c160e71f90f6a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_845d29d019f688ef8016cfb32c4bac3e = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.431874, -70.647723], [-33.43949515564987, -70.64953513821996], [-33.43949515564987, -70.64953513821996], [-33.436639090107406, -70.64200400967839], [-33.43731790255185, -70.64174538474282], [-33.43606751567123, -70.63111504939877], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+            poly_line_845d29d019f688ef8016cfb32c4bac3e.bindTooltip(
+                `<div>
+                     PM | Cluster 6 | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b8627dce7649508313a21e1a64c8aea = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_18142d39199204e260d999f6b44880fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9e703a83e9edd2309fd440d29106686 = $(`<div id="html_b9e703a83e9edd2309fd440d29106686" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_18142d39199204e260d999f6b44880fc.setContent(html_b9e703a83e9edd2309fd440d29106686);
+            
+        
+
+        circle_marker_7b8627dce7649508313a21e1a64c8aea.bindPopup(popup_18142d39199204e260d999f6b44880fc)
+        ;
+
+        
+    
+    
+            circle_marker_7b8627dce7649508313a21e1a64c8aea.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_356c8d63cfe7811fe23168218398b292 = L.circleMarker(
+                [-33.431874, -70.647723],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_a9c566848ab96f9180fe506d1d33f7ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2ef8651e6bac0fa384717f686186adc = $(`<div id="html_c2ef8651e6bac0fa384717f686186adc" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 1<br>Node ID: 960<br>Dirección: AV. RECOLETA 9981</div>`)[0];
+                popup_a9c566848ab96f9180fe506d1d33f7ea.setContent(html_c2ef8651e6bac0fa384717f686186adc);
+            
+        
+
+        circle_marker_356c8d63cfe7811fe23168218398b292.bindPopup(popup_a9c566848ab96f9180fe506d1d33f7ea)
+        ;
+
+        
+    
+    
+            var circle_marker_f7e0beb2b91945151c7348ca6408f243 = L.circleMarker(
+                [-33.43949515564987, -70.64953513821996],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_616cd0a104bd12840514bff8c0ac7b46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb2f19bc308ca7fc9f57a0027951f855 = $(`<div id="html_bb2f19bc308ca7fc9f57a0027951f855" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 2<br>Node ID: 1716<br>Dirección: CALLE ESTADO 4786</div>`)[0];
+                popup_616cd0a104bd12840514bff8c0ac7b46.setContent(html_bb2f19bc308ca7fc9f57a0027951f855);
+            
+        
+
+        circle_marker_f7e0beb2b91945151c7348ca6408f243.bindPopup(popup_616cd0a104bd12840514bff8c0ac7b46)
+        ;
+
+        
+    
+    
+            var circle_marker_ee453a9a234fe576d304dcee116447ee = L.circleMarker(
+                [-33.43949515564987, -70.64953513821996],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_5e82d806ca2bb26dcb0558775561b0a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_017c60b5d96107a57c7294dd568d361b = $(`<div id="html_017c60b5d96107a57c7294dd568d361b" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 3<br>Node ID: 1717<br>Dirección: CALLE ESTADO 5020</div>`)[0];
+                popup_5e82d806ca2bb26dcb0558775561b0a6.setContent(html_017c60b5d96107a57c7294dd568d361b);
+            
+        
+
+        circle_marker_ee453a9a234fe576d304dcee116447ee.bindPopup(popup_5e82d806ca2bb26dcb0558775561b0a6)
+        ;
+
+        
+    
+    
+            var circle_marker_c6735d81b0b32a93c3c32b05437e5453 = L.circleMarker(
+                [-33.436639090107406, -70.64200400967839],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_7a07dbedb2ab725e0b44ca58d01fe7d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_426eee2bab148e529e3b1f156360b3f1 = $(`<div id="html_426eee2bab148e529e3b1f156360b3f1" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 4<br>Node ID: 1877<br>Dirección: CALLE MONJITAS 5985</div>`)[0];
+                popup_7a07dbedb2ab725e0b44ca58d01fe7d0.setContent(html_426eee2bab148e529e3b1f156360b3f1);
+            
+        
+
+        circle_marker_c6735d81b0b32a93c3c32b05437e5453.bindPopup(popup_7a07dbedb2ab725e0b44ca58d01fe7d0)
+        ;
+
+        
+    
+    
+            var circle_marker_d3e6262d067bf28a08ab0031203d0ce1 = L.circleMarker(
+                [-33.43731790255185, -70.64174538474282],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_b485299d2af17b6e8a256e1fb819688d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e47b23e99df7eb8b4eb0bbe6e76f0a5 = $(`<div id="html_7e47b23e99df7eb8b4eb0bbe6e76f0a5" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 5<br>Node ID: 1845<br>Dirección: CALLE MERCED 8269</div>`)[0];
+                popup_b485299d2af17b6e8a256e1fb819688d.setContent(html_7e47b23e99df7eb8b4eb0bbe6e76f0a5);
+            
+        
+
+        circle_marker_d3e6262d067bf28a08ab0031203d0ce1.bindPopup(popup_b485299d2af17b6e8a256e1fb819688d)
+        ;
+
+        
+    
+    
+            var circle_marker_11e87d3176801a134ad30f56265935e9 = L.circleMarker(
+                [-33.43606751567123, -70.63111504939877],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_2c4203506695ee6b1fb614cd6b53109f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_500ad61a09f76b62b8bd0ac4a0fa235f = $(`<div id="html_500ad61a09f76b62b8bd0ac4a0fa235f" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 6<br>Node ID: 875<br>Dirección: AV. PROVIDENCIA 4079</div>`)[0];
+                popup_2c4203506695ee6b1fb614cd6b53109f.setContent(html_500ad61a09f76b62b8bd0ac4a0fa235f);
+            
+        
+
+        circle_marker_11e87d3176801a134ad30f56265935e9.bindPopup(popup_2c4203506695ee6b1fb614cd6b53109f)
+        ;
+
+        
+    
+    
+            var circle_marker_8e0526066abaa672cfd5b2fde7c7f805 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4dc6040bcfb5de832f4c160e71f90f6a);
+        
+    
+        var popup_31bef758b86d202b47ca51b120cda58b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5bef8b15ed9fc6bf66fa19bc3da90d3 = $(`<div id="html_e5bef8b15ed9fc6bf66fa19bc3da90d3" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 6<br>Ruta: 2<br>Orden: 7<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_31bef758b86d202b47ca51b120cda58b.setContent(html_e5bef8b15ed9fc6bf66fa19bc3da90d3);
+            
+        
+
+        circle_marker_8e0526066abaa672cfd5b2fde7c7f805.bindPopup(popup_31bef758b86d202b47ca51b120cda58b)
+        ;
+
+        
+    
+    
+            circle_marker_8e0526066abaa672cfd5b2fde7c7f805.bindTooltip(
+                `<div>
+                     Depósito | Ruta 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_9b1eda238783f4cc6014b713c773202b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_6de6559a0d638699d254a687e1f0f878 = L.polyline(
+                [[-33.42748443128771, -70.68728138816309], [-33.49707804581206, -70.59790889427815], [-33.49707804581206, -70.59790889427815], [-33.5158876737604, -70.58408346247862], [-33.519235429031845, -70.58115079491817], [-33.519235429031845, -70.58115079491817], [-33.519235429031845, -70.58115079491817], [-33.42748443128771, -70.68728138816309]],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+            poly_line_6de6559a0d638699d254a687e1f0f878.bindTooltip(
+                `<div>
+                     PM | Cluster 8 | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_950cf45498eaf15b992c29c4d595e147 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_9b346566e7894ff7f6d6320a1516f32b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e341d2156a6e9b723205b7968ea3229 = $(`<div id="html_9e341d2156a6e9b723205b7968ea3229" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 0<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_9b346566e7894ff7f6d6320a1516f32b.setContent(html_9e341d2156a6e9b723205b7968ea3229);
+            
+        
+
+        circle_marker_950cf45498eaf15b992c29c4d595e147.bindPopup(popup_9b346566e7894ff7f6d6320a1516f32b)
+        ;
+
+        
+    
+    
+            circle_marker_950cf45498eaf15b992c29c4d595e147.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d658130cb36ea14ef63a23da4cc743b1 = L.circleMarker(
+                [-33.49707804581206, -70.59790889427815],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_a6f8cd2ab15d23ea03153663005dea4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba36ff992532b116d12cf1d550445a52 = $(`<div id="html_ba36ff992532b116d12cf1d550445a52" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 1<br>Node ID: 547<br>Dirección: AV. MACUL 283</div>`)[0];
+                popup_a6f8cd2ab15d23ea03153663005dea4b.setContent(html_ba36ff992532b116d12cf1d550445a52);
+            
+        
+
+        circle_marker_d658130cb36ea14ef63a23da4cc743b1.bindPopup(popup_a6f8cd2ab15d23ea03153663005dea4b)
+        ;
+
+        
+    
+    
+            var circle_marker_89d3c81af2548ef7e68cffce4554117e = L.circleMarker(
+                [-33.49707804581206, -70.59790889427815],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_a37296b870638a105597c04b82592a1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_602163a44cd51aa8d3f37f7d94101133 = $(`<div id="html_602163a44cd51aa8d3f37f7d94101133" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 2<br>Node ID: 576<br>Dirección: AV. MACUL 9030</div>`)[0];
+                popup_a37296b870638a105597c04b82592a1c.setContent(html_602163a44cd51aa8d3f37f7d94101133);
+            
+        
+
+        circle_marker_89d3c81af2548ef7e68cffce4554117e.bindPopup(popup_a37296b870638a105597c04b82592a1c)
+        ;
+
+        
+    
+    
+            var circle_marker_85b462d157027af71742934b70920aba = L.circleMarker(
+                [-33.5158876737604, -70.58408346247862],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_596cd890ce81e1f9ddc6b91d5e376f52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a926938d0589004cbf1a122b602ff7e = $(`<div id="html_4a926938d0589004cbf1a122b602ff7e" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 3<br>Node ID: 1259<br>Dirección: AVENIDA LA FLORIDA 4055</div>`)[0];
+                popup_596cd890ce81e1f9ddc6b91d5e376f52.setContent(html_4a926938d0589004cbf1a122b602ff7e);
+            
+        
+
+        circle_marker_85b462d157027af71742934b70920aba.bindPopup(popup_596cd890ce81e1f9ddc6b91d5e376f52)
+        ;
+
+        
+    
+    
+            var circle_marker_c2af00e886e700e2c81e428346463eec = L.circleMarker(
+                [-33.519235429031845, -70.58115079491817],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_0b16f0eeec2cdc3ae43a21c8b0129a82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b4a2c59f5215013f39066cf97078c3e = $(`<div id="html_7b4a2c59f5215013f39066cf97078c3e" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 4<br>Node ID: 386<br>Dirección: AV. LA FLORIDA 2133</div>`)[0];
+                popup_0b16f0eeec2cdc3ae43a21c8b0129a82.setContent(html_7b4a2c59f5215013f39066cf97078c3e);
+            
+        
+
+        circle_marker_c2af00e886e700e2c81e428346463eec.bindPopup(popup_0b16f0eeec2cdc3ae43a21c8b0129a82)
+        ;
+
+        
+    
+    
+            var circle_marker_e847fa9b8314a7fe0431a30e5264847b = L.circleMarker(
+                [-33.519235429031845, -70.58115079491817],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_69850b1b9123cd99cf832424b1e119bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fe4d66b1574174de2be6889b6d76484 = $(`<div id="html_6fe4d66b1574174de2be6889b6d76484" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 5<br>Node ID: 396<br>Dirección: AV. LA FLORIDA 4055</div>`)[0];
+                popup_69850b1b9123cd99cf832424b1e119bf.setContent(html_6fe4d66b1574174de2be6889b6d76484);
+            
+        
+
+        circle_marker_e847fa9b8314a7fe0431a30e5264847b.bindPopup(popup_69850b1b9123cd99cf832424b1e119bf)
+        ;
+
+        
+    
+    
+            var circle_marker_22c86b2cd834587d0b5aba8a567eccf4 = L.circleMarker(
+                [-33.519235429031845, -70.58115079491817],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_68dac229ce09c9c7a0f3f5c8df20feec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba27b552eac08711fb40dc29fac4a2db = $(`<div id="html_ba27b552eac08711fb40dc29fac4a2db" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 6<br>Node ID: 402<br>Dirección: AV. LA FLORIDA 476</div>`)[0];
+                popup_68dac229ce09c9c7a0f3f5c8df20feec.setContent(html_ba27b552eac08711fb40dc29fac4a2db);
+            
+        
+
+        circle_marker_22c86b2cd834587d0b5aba8a567eccf4.bindPopup(popup_68dac229ce09c9c7a0f3f5c8df20feec)
+        ;
+
+        
+    
+    
+            var circle_marker_85325246faa91a7378aefe53df7449d8 = L.circleMarker(
+                [-33.42748443128771, -70.68728138816309],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b1eda238783f4cc6014b713c773202b);
+        
+    
+        var popup_0da6c1aa4fc145e895216603ebfde89b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a161722b17dcb79cecc37e933a8897e = $(`<div id="html_7a161722b17dcb79cecc37e933a8897e" style="width: 100.0%; height: 100.0%;">Fecha: 2027-01-01<br>Ventana: PM<br>Cluster: 8<br>Ruta: 1<br>Orden: 7<br>Node ID: 0<br>Dirección: POETA PEDRO PRADO 1556, SANTIAGO, QUINTA NORMAL, REGIÓN METROPOLITANA, CHILE</div>`)[0];
+                popup_0da6c1aa4fc145e895216603ebfde89b.setContent(html_7a161722b17dcb79cecc37e933a8897e);
+            
+        
+
+        circle_marker_85325246faa91a7378aefe53df7449d8.bindPopup(popup_0da6c1aa4fc145e895216603ebfde89b)
+        ;
+
+        
+    
+    
+            circle_marker_85325246faa91a7378aefe53df7449d8.bindTooltip(
+                `<div>
+                     Depósito | Ruta 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_a2e55fcdbb81a02b9825e094d978ab3b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_79f1306c91339386554de45933475b5a = L.marker(
+                [-33.42748443128771, -70.68728138816309],
+                {
+}
+            ).addTo(feature_group_a2e55fcdbb81a02b9825e094d978ab3b);
+        
+    
+            var div_icon_2a6fde0fe0c3d3fbec54939dda29196a = L.divIcon({
+  "html": "\n    \u003cdiv style=\"\n        font-size: 22px;\n        line-height: 22px;\n        text-align: center;\n        width: 24px;\n        height: 24px;\n    \"\u003e\ud83c\udfe0\u003c/div\u003e\n    ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_7c562033fb4d56bfeb5eca1758b8d742 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e20cef0f8605d823c3a4516c38c94b8 = $(`<div id="html_3e20cef0f8605d823c3a4516c38c94b8" style="width: 100.0%; height: 100.0%;">Depósito<br>Node ID: 0</div>`)[0];
+                popup_7c562033fb4d56bfeb5eca1758b8d742.setContent(html_3e20cef0f8605d823c3a4516c38c94b8);
+            
+        
+
+        marker_79f1306c91339386554de45933475b5a.bindPopup(popup_7c562033fb4d56bfeb5eca1758b8d742)
+        ;
+
+        
+    
+    
+            marker_79f1306c91339386554de45933475b5a.bindTooltip(
+                `<div>
+                     Depósito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79f1306c91339386554de45933475b5a.setIcon(div_icon_2a6fde0fe0c3d3fbec54939dda29196a);
+            
+    
+            feature_group_a2e55fcdbb81a02b9825e094d978ab3b.addTo(map_852eaf77fa707fa0a07963db4e60205c);
+        
+    
+            var layer_control_4a31f83e883d1ac4f662a32a2ef67aa1_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_0ad7e20a9b66d27cbd8fba2ad8e05942,
+                },
+                overlays :  {
+                    "AM | Cluster 1 | Ruta 1" : feature_group_1f446a78360fc678c34bff5cc3a87a60,
+                    "AM | Cluster 1 | Ruta 2" : feature_group_2d623679507c2aa3f90e8e47d86e8466,
+                    "AM | Cluster 2 | Ruta 1" : feature_group_efd1fc73750e572f87ec3e802f814b22,
+                    "AM | Cluster 2 | Ruta 2" : feature_group_7c3e3ae002f1a13ccbb373eda1ea5ea8,
+                    "AM | Cluster 4 | Ruta 1" : feature_group_d8d9cf40f8308ac1179db7bead5e6b76,
+                    "AM | Cluster 4 | Ruta 2" : feature_group_8a3eccfbc8efe43fa0ef11f22d62e1dd,
+                    "AM | Cluster 7 | Ruta 1" : feature_group_08d7b1681ecb7f386549825caa9eb1de,
+                    "AM | Cluster 7 | Ruta 2" : feature_group_4aca617f4cbf275bb63e2befcb532138,
+                    "PM | Cluster 3 | Ruta 1" : feature_group_bfd4e4748c744609e4319790ae070862,
+                    "PM | Cluster 3 | Ruta 2" : feature_group_61af1ba6c6ca9681e69f91c8582c0ce4,
+                    "PM | Cluster 5 | Ruta 1" : feature_group_2d47ecbfbfe3c47f71a2f2d9844da256,
+                    "PM | Cluster 5 | Ruta 2" : feature_group_f0a2181cc389d2a2eab5d38d20c9394d,
+                    "PM | Cluster 6 | Ruta 1" : feature_group_0590e8f76a3b2a4648ed5d09a9fb883f,
+                    "PM | Cluster 6 | Ruta 2" : feature_group_4dc6040bcfb5de832f4c160e71f90f6a,
+                    "PM | Cluster 8 | Ruta 1" : feature_group_9b1eda238783f4cc6014b713c773202b,
+                    "Dep\u00f3sitos" : feature_group_a2e55fcdbb81a02b9825e094d978ab3b,
+                },
+            };
+            let layer_control_4a31f83e883d1ac4f662a32a2ef67aa1 = L.control.layers(
+                layer_control_4a31f83e883d1ac4f662a32a2ef67aa1_layers.base_layers,
+                layer_control_4a31f83e883d1ac4f662a32a2ef67aa1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_852eaf77fa707fa0a07963db4e60205c);
+
+        
+</script>
+</html>

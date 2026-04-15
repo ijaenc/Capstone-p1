@@ -12,7 +12,7 @@ carpeta_salida = r"C:\Users\ijaen\OneDrive\Documents\GitHub\Capstone\salidas\map
 os.makedirs(carpeta_salida, exist_ok=True)
 
 # Día a visualizar
-fecha_objetivo = "2027-01-02"
+fecha_objetivo = "2026-12-10"
 
 
 # =========================
@@ -56,26 +56,6 @@ def color_por_ventana_y_indice(ventana, i):
     return colores_pm[i % len(colores_pm)]
 
 
-def crear_icono_deposito():
-    """
-    Ícono de depósito tipo casa, mediano.
-    """
-    html = """
-    <div style="
-        font-size: 22px;
-        line-height: 22px;
-        text-align: center;
-        width: 24px;
-        height: 24px;
-    ">🏠</div>
-    """
-    return folium.DivIcon(
-        html=html,
-        icon_size=(24, 24),
-        icon_anchor=(12, 12)
-    )
-
-
 # =========================
 # MAIN
 # =========================
@@ -100,13 +80,7 @@ def main():
     lat_centro = df["lat"].mean()
     lon_centro = df["lon"].mean()
 
-    # Cambio importante:
-    # usar tiles de CartoDB para evitar el bloqueo visual de OSM
-    mapa = folium.Map(
-        location=[lat_centro, lon_centro],
-        zoom_start=11,
-        tiles="CartoDB positron"
-    )
+    mapa = folium.Map(location=[lat_centro, lon_centro], zoom_start=11)
 
     # Grupo aparte para depósitos
     grupo_depositos = folium.FeatureGroup(name="Depósitos", show=True)
@@ -145,6 +119,8 @@ def main():
             idx_pm += 1
 
         nombre_capa = f"{ventana} | Cluster {cluster_id} | Ruta {ruta_id}"
+
+        # show=False para que el mapa abra limpio y tú actives las rutas que quieras
         capa_ruta = folium.FeatureGroup(name=nombre_capa, show=False)
 
         # Línea de la ruta
@@ -171,29 +147,29 @@ def main():
             if row["es_deposito"] == 1:
                 dep_key = (row["node_id"], row["lat"], row["lon"])
 
-                # Depósito en grupo aparte: casa mediana
                 if dep_key not in depositos_agregados:
-                    folium.Marker(
+                    folium.CircleMarker(
                         location=[row["lat"], row["lon"]],
-                        icon=crear_icono_deposito(),
-                        popup=folium.Popup(
-                            f"Depósito<br>Node ID: {row['node_id']}",
-                            max_width=250
-                        ),
-                        tooltip="Depósito"
+                        radius=5,
+                        color="red",
+                        fill=True,
+                        fill_color="red",
+                        fill_opacity=1.0,
+                        popup=folium.Popup(f"Depósito<br>Node ID: {row['node_id']}", max_width=250)
                     ).add_to(grupo_depositos)
                     depositos_agregados.add(dep_key)
 
-                # También visible dentro de la capa de la ruta
-                folium.Marker(
+                folium.CircleMarker(
                     location=[row["lat"], row["lon"]],
-                    icon=crear_icono_deposito(),
-                    popup=folium.Popup(texto, max_width=300),
-                    tooltip=f"Depósito | Ruta {ruta_id}"
+                    radius=5,
+                    color="red",
+                    fill=True,
+                    fill_color="red",
+                    fill_opacity=1.0,
+                    popup=folium.Popup(texto, max_width=300)
                 ).add_to(capa_ruta)
 
             else:
-                # Clientes más pequeños
                 folium.CircleMarker(
                     location=[row["lat"], row["lon"]],
                     radius=3,
